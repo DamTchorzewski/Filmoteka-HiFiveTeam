@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://damiantchorzewski.github.io/filmoteka-teamfive/src/index.html",
+  "homepage": "https://damiantchorzewski.github.io/Filmoteka-TeamFive/src/index.html",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka-teamfive/"
+    "build": "parcel build src/*.html --public-url /Filmoteka-TeamFive/"
   },
   "repository": {
     "type": "git",
