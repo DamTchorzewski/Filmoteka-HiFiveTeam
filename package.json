@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "Filmoteka-HiFiveTeam",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://damiantchorzewski.github.io/Filmoteka-HiFiveTeam/src/index.html",
@@ -18,7 +18,9 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "handlebars": "^4.7.7",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
