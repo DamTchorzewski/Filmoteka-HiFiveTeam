@@ -1,12 +1,15 @@
 .footer {
   background-color: var(--color-bg-sec);
   height: 100px;
+  padding-top: 28px;
+  padding-bottom: 29px;
 
   &__wrapper {
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    gap: 10px;
   }
 
   &__copyright {
@@ -14,14 +17,13 @@
     font-family: var(--font-family);
     font-weight: 400;
     line-height: 1.17;
-
-    &__copyright--underline {
-      text-decoration: underline;
-    }
+    color: var(--color-text-footer);
   }
-
+  &__copyright--underline {
+    text-decoration: underline;
+  }
   &__developed {
-    width: 236 px;
+    width: 236px;
     display: flex;
     align-items: center;
     text-align: center;
