@@ -1,11 +1,12 @@
 .footer {
   background-color: var(--color-bg-sec);
+  height: 100px;
 
   &__wrapper {
-    width: 100px;
     display: flex;
     align-items: center;
     text-align: center;
+    flex-direction: column;
   }
 
   &__copyright {
@@ -17,5 +18,14 @@
     &__copyright--underline {
       text-decoration: underline;
     }
+  }
+
+  &__developed {
+    width: 236 px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
