@@ -1,8 +1,8 @@
-@import './common';
-@import './variables';
-@import './global';
-@import './body';
-@import './header';
-@import './gallery';
-@import './header-library';
-@import './footer';
+@import './utils/variables';
+@import './base/normalize';
+@import './base/global';
+@import './base/body';
+@import './components/header';
+@import './components/header-library';
+@import './components/gallery';
+@import './components/footer';
