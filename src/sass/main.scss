@@ -1,7 +1,12 @@
+// UTILS SCSS
 @import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/modal-window';
+// BASE SCSS
 @import './base/normalize';
 @import './base/global';
 @import './base/body';
+// COMPONENTS SCSS
 @import './components/header';
 @import './components/header-library';
 @import './components/gallery';
