@@ -1,0 +1,89 @@
+.library__header {
+  color: var(--color-bg-main);
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  height: 216px;
+
+  background-image: url('../images/header/bglibrary-mobile.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header/bglibrary-mobile@2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+    background-image: url('../images/header/bglibrary-tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/bglibrary-tablet@2x.jpg');
+    }
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url('../images/header/bglibrary-desktop.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/bglibrary-desktop@2x.jpg');
+    }
+  }
+}
+
+.library__btns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 40px;
+  padding-bottom: 60px;
+
+  @media (min-width: 480px) {
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    gap: 32px;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 16px;
+  }
+}
+
+.library__btn {
+  background: transparent;
+  text-transform: uppercase;
+  border: solid 1px var(--color-bg-main);
+  border-radius: var(--border-radius);
+  color: var(--color-bg-main);
+  padding-block: 12px;
+  font-size: var(--font-size-main);
+
+  cursor: pointer;
+
+  @media (min-width: 480px) {
+    width: 130px;
+  }
+
+  @media (min-width: 768px) {
+    width: 152px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 148px;
+  }
+
+  transition-property: background-color, border-color, transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(---timing-function);
+}
+
+.library__btn:hover {
+  background-color: var(--color-accent-sec);
+  border-color: var(--color-accent-sec);
+  transform: scale(1.05);
+}
