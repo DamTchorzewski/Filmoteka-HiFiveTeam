@@ -62,19 +62,22 @@
   color: var(--color-bg-main);
   padding-block: 12px;
   font-size: var(--font-size-main);
-
+  padding-inline: 36px;
   cursor: pointer;
 
   @media (min-width: 480px) {
     width: 130px;
+
   }
 
   @media (min-width: 768px) {
     width: 152px;
+    padding-inline: 46px;
   }
 
   @media (min-width: 1200px) {
     width: 148px;
+    padding-inline: 41px;
   }
 
   transition-property: background-color, border-color, transform;
