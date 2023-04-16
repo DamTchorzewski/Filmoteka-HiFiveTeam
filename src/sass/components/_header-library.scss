@@ -41,9 +41,9 @@
   margin-top: 40px;
   padding-bottom: 60px;
 
-  @media (min-width: 480px) {
-    gap: 20px;
-  }
+  // @media (min-width: 320px) {
+  //   gap: 20px;
+  // }
 
   @media (min-width: 768px) {
     gap: 32px;
@@ -62,13 +62,10 @@
   color: var(--color-bg-main);
   padding-block: 12px;
   font-size: var(--font-size-main);
-  padding-inline: 36px;
   cursor: pointer;
-
-  @media (min-width: 480px) {
-    width: 130px;
-
-  }
+  
+  padding-inline: 36px;
+  width: 130px;
 
   @media (min-width: 768px) {
     width: 152px;
