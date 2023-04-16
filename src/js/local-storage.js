@@ -4,11 +4,19 @@ export const watched = getWatchedLocalSotrage() || [];
 export const queue = getQueueLocalStoradge() || [];
 
 export function getWatchedLocalSotrage() {
-  return JSON.parse(localStorage.getItem(KEY_WATCHED));
+  try {
+    return JSON.parse(localStorage.getItem(KEY_WATCHED));
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 export function getQueueLocalStoradge() {
-  return JSON.parse(localStorage.getItem(KEY_QUEUE));
+  try {
+    return JSON.parse(localStorage.getItem(KEY_QUEUE));
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 export function setWatchedLocalStorage(arr) {

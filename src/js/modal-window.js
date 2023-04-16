@@ -1,5 +1,4 @@
-import { getInfoMovie, getVideos } from './api';
-import { getMovieDetails, getMovieTrailer } from './api';
+import Api from './api';
 import refs from './refs';
 import { onAddToWatched, onAddToQueue } from './watched&queue';
 import {
