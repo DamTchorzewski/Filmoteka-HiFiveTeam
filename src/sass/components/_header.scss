@@ -109,22 +109,23 @@ color: var(--color-accent-sec);
   right: 0px;
   top: 17px;
   content: '';
-  background-image: url(../images/header/Rectangle2.svg);
+  background-image: url(/src/images/icons.svg#rectangle-home);
   background-repeat: no-repeat;
-  width: 100%;
-  height: 50px;
+  width: 34px;
+  height: 3px;
+  background-color: var(--color-accent-third);
 }
 
 .active-library::after {
   display: block;
   position: absolute;
-  right: -32px;
   top: 17px;
   content: '';
-  background-image: url(../images/header/Rectangle12.svg);
+  background-image: url(/src/images/icons.svg#rectangle-library);
   background-repeat: no-repeat;
-  width: 100px;
-  height: 50px;
+  width: 69px;
+  height: 3px;
+background-color: var(--color-accent-third);
 }
 
 img {
