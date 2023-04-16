@@ -1,0 +1,127 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --color-text-main: #000000;
+  --color-text-sec: #ffffff;
+  --color-text-third: #8c8c8c;
+  --color-text-footer: #545454;
+  --color-accent-main: #ff6b08;
+  --color-accent-sec: #ff6b01;
+  --color-accent-third: #ff001b;
+  --color-bg-main: #ffffff;
+  --color-bg-sec: #f7f7f7;
+  --font-family: "Roboto", sans-serif;
+  --font-weight: 500;
+  --font-size-main: 12px;
+  --font-size-sec: 20px;
+  --font-size-third: 14px;
+  --font-size-fourth: 30px;
+  --border-radius: 5px;
+  --transition-duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-main);
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.pagination_wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  width: 16px;
+  cursor: default;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(247, 247, 247, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  background: url("/src/images/arrow.svg") no-repeat center center;
+  background-color: rgba(247, 247, 247, 0.2);
+}
+
+.btn:hover {
+  transition: all 0.3s ease;
+}
+
+.next {
+  rotate: 180deg;
+}
+
+.active {
+  background-color: #ff6b08;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+
+.number:hover {
+  background-color: #ff6b08;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=main.css.map */
