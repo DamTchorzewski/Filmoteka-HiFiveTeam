@@ -36,10 +36,10 @@
     font-weight: 400;
     line-height: 1.17;
     color: var(--color-text-footer);
+  }
 
-    &__copyright--underline {
-      text-decoration: underline;
-    }
+  .spam {
+    text-decoration: underline;
   }
   &__developed {
     width: 236px;
@@ -51,6 +51,7 @@
 
     @media screen and (min-width: 768px) {
       width: auto;
+      gap: 10px;
     }
   }
 }
