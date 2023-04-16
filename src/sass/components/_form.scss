@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  // flex-direction: column;
+  
 }
 
 .form__input {
@@ -25,15 +25,17 @@
   transition-timing-function: var(---timing-function);
 }
 
-.form__input:hover,
-:focus {
+.form__input:hover {
+  border-bottom-color: var(--color-accent-sec);
+}
+
+.form__input:focus {
   border-bottom-color: var(--color-accent-sec);
 }
 
 .form__btn {
   position: absolute;
   height: 100%;
-  // padding: 1px;
   bottom: 0;
   background: transparent;
   outline: none;
