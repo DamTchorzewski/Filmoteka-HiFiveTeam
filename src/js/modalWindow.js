@@ -4,6 +4,6 @@ import { onAddToWatched, onAddToQueue } from './watched&queue';
 import {
   watched,
   queue,
-  setQueueLocalStoradge,
-  setWatchedLocalStoradge,
-} from './local-storage';
+  setQueueLocalStorage,
+  setWatchedLocalStorage,
+} from './localStorage';

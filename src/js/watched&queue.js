@@ -3,7 +3,7 @@ import {
   queue,
   setWatchedLocalStorage,
   setQueueLocalStorage,
-} from './local-storage';
+} from './localStorage';
 
 export function onAddToWatched(id) {
   if (watched.includes(id)) {
