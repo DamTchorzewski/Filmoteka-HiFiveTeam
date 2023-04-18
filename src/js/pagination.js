@@ -14,7 +14,7 @@ const setPagination = totalItems => {
     centerAlign: true,
   };
 
-  const pagination = new Pagination(refs.paginationDOM, options);
+  const pagination = new Pagination(refs.paginationBox, options);
 
   return pagination;
 };
@@ -27,14 +27,14 @@ const getPagination = async () => {
     pagination.on('beforeMove', ({ page }) => {
       refs.moviesGallery.innerHTML = '';
       Loader.show(refs.loader);
-      refs.paginationDOM.style.display = 'none';
+      refs.paginationBox.style.display = 'none';
       refs.footer.style.display = 'none';
 
       Api.getTrendingMovies(page)
         .then(data => {
           setTimeout(() => {
             Loader.hide(refs.loader);
-            refs.paginationDOM.style.display = 'block';
+            refs.paginationBox.style.display = 'block';
             refs.footer.style.display = 'block';
 
             renderMovieCard(data.results);

@@ -1,6 +1,6 @@
 const refs = {
   moviesGallery: document.querySelector('.gallery__container'),
-  paginationDOM: document.querySelector('#pagination'),
+  paginationBox: document.querySelector('#pagination'),
   divBackdrop: document.querySelector('.js-backdrop'),
   closeModalBtn: document.querySelector('.modal__btn-close'),
   loader: document.querySelector('.loader'),
