@@ -1,61 +1,51 @@
-const ulElem = document.querySelector('.pagination_wrapper ul');
-let totalPages = 20;
+import Api from './api';
+import refs from './refs';
+import { renderMovieCard } from './renderMovieCards.js';
+import Loader from './loader';
+import scrollTop from './scrollTop';
+import Pagination from 'tui-pagination';
+import 'tui-pagination/dist/tui-pagination.css';
 
-function element(totalPages, page) {
-  let liTag = '';
-  let activeLi;
-  let beforePage = page - 1;
-  let afterPage = page + 1;
-  if (page > 1) {
-    liTag += `<li class="prev btn" onclick="element(totalPages, ${
-      page - 1
-    })"></li>`;
-  }
-  if (page > 2) {
-    liTag += `<li class="number" onclick="element(totalPages, 1)"><span>1</span></li>`;
-    if (page > 3) {
-      liTag += `<li class="dots"><span>...</span></li>`;
-      if (page > 4) {
-        liTag += `<li class="number" onclick="element(totalPages, ${
-          page - 2
-        })"><span>${page - 2}</span></li>`;
-      }
-    }
-  }
+const setPagination = totalItems => {
+  const options = {
+    totalItems,
+    itemsPerPage: 20,
+    visiblePages: 5,
+    centerAlign: true,
+  };
 
-  for (let pageLength = beforePage; pageLength <= afterPage; pageLength++) {
-    if (pageLength > totalPages) {
-      continue;
-    }
-    if (pageLength == 0) {
-      pageLength = pageLength + 1;
-    }
-    if (page == pageLength) {
-      activeLi = 'active';
-    } else {
-      activeLi = '';
-    }
-    liTag += `<li class="number ${activeLi}" onclick="element(totalPages, ${pageLength})"><span>${pageLength}</span></li>`;
-  }
+  const pagination = new Pagination(refs.paginationDOM, options);
 
-  if (page < totalPages - 1) {
-    if (page < totalPages - 3) {
-      liTag += `<li class="number" onclick="element(totalPages, ${
-        page + 2
-      })"><span>${page + 2}</span></li>`;
-    }
-    if (page < totalPages - 2) {
-      liTag += `<li class="dots"><span>...</span></li>`;
-    }
-    liTag += `<li class="number" onclick="element(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
-  }
+  return pagination;
+};
 
-  if (page < totalPages) {
-    liTag += `<li class="next btn" onclick="element(totalPages, ${
-      page + 1
-    })"></li>`;
-  }
-  ulElem.innerHTML = liTag;
-}
+const getPagination = async () => {
+  try {
+    const data = await Api.getTrendingMovies();
+    const pagination = setPagination(data.total_pages);
 
-element(totalPages, 1);
+    pagination.on('beforeMove', ({ page }) => {
+      refs.moviesGallery.innerHTML = '';
+      Loader.show(refs.loader);
+      refs.paginationDOM.style.display = 'none';
+      refs.footer.style.display = 'none';
+
+      Api.getTrendingMovies(page)
+        .then(data => {
+          setTimeout(() => {
+            Loader.hide(refs.loader);
+            refs.paginationDOM.style.display = 'block';
+            refs.footer.style.display = 'block';
+
+            renderMovieCard(data.results);
+            scrollTop();
+          }, 500);
+        })
+        .catch(console.error);
+    });
+  } catch (err) {
+    console.error(err.stack);
+  }
+};
+
+export default getPagination;

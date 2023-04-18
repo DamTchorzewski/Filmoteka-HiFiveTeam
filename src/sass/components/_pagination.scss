@@ -1,76 +1,49 @@
-.pagination {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-}
-
-.pagination_wrapper ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  width: 16px;
-  cursor: pointer;
-}
-
-.dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  width: 16px;
-  cursor: default;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
+#pagination {
   height: 40px;
-  background: rgba(247, 247, 247, 0.1);
-  border-radius: 5px;
-  cursor: pointer;
-  background: url('/src/images/arrow.svg') no-repeat center center;
-  background-color: rgba(247, 247, 247, 0.2);
-}
+  margin: 0 0 60px;
 
-.btn:hover {
-  transition: all 0.3s ease;
-  // background: rgba(247, 247, 247, 0.7);
-}
+  @media screen and (max-width: 434px) {
+    height: 30px;
+    margin: 20px 0 40px;
+  }
 
-.next {
-  rotate: 180deg;
-}
+  & .tui-page-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-main);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
+    border: none;
+    transition-property: color, background-color, transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--timing-function);
 
-.active {
-  background-color: #ff6b08;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-}
-.number:hover {
-  background-color: #ff6b08;
-  transition: all 0.3s ease;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+    @media screen and (max-width: 434px) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover:not(.tui-is-disabled),
+    &:focus-visible:not(.tui-is-disabled) {
+      color: var(--color-text-sec);
+      background-color: var(--color-accent-main);
+      transform: translateY(-3px);
+    }
+  }
+
+  & .tui-is-selected {
+    color: var(--color-text-sec);
+    background-color: var(--color-accent-main);
+    pointer-events: none;
+  }
+
+  & .tui-next {
+    background-color: var(--color-bg-sec);
+  }
+
+  & .tui-prev {
+    background-color: var(--color-bg-sec);
+  }
 }
