@@ -111,6 +111,7 @@
 .modal__poster-thumb {
   display: flex;
 }
+
 .modal__poster {
   margin-bottom: 20px;
   border-radius: 5px;
@@ -130,7 +131,7 @@
   }
 }
 
-modal__info-thumb {
+.modal__info-thumb {
   @media screen and (min-width: $tablet) {
     width: 264px;
   }

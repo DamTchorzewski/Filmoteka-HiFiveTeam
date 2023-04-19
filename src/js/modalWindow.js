@@ -7,12 +7,12 @@ import {
   setQueue,
   getWatched,
   getQueue,
-} from './local-storage';
+} from './localStorage';
 import { movieGenres } from './genres';
 
 window.addEventListener('keydown', closeModalHandler);
 window.addEventListener('click', clickBackdropCloseModal);
-refs.closeButton.addEventListener('click', onCloseButton);
+refs.windowCloseButton.addEventListener('click', onCloseButton);
 refs.moviesGallery.addEventListener('click', showCard);
 
 function clickBackdropCloseModal(e) {

@@ -1,9 +1,9 @@
 const show = loader => {
-  loader.classList.remove('is-hidden');
+  loader.classList.remove('visually-hidden');
 };
 
 const hide = loader => {
-  loader.classList.add('is-hidden');
+  loader.classList.add('visually-hidden');
 };
 
 const Loader = { show, hide };
