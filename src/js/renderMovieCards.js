@@ -5,8 +5,7 @@ import noImg from '../images/moviesGallery/noImg.jpg';
 
 const moviesGallery = refs.moviesGallery;
 
-Api.getTrendingMovies()
-  .then(data => {
+Api.getTrendingMovies().then(data => {
     renderMovieCard(data.results);
   })
   .catch(error => {
@@ -14,6 +13,7 @@ Api.getTrendingMovies()
   });
 
 export function renderMovieCard(movies) {
+  
   const markup = movies
     .map(
       ({
