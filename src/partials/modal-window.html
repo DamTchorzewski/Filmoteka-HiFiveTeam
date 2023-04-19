@@ -1,14 +1,14 @@
-<div class="backdrop js-backdrop" data modal>
-  <div class="modal">
-    <button type="button" class="modal_btn-close">
-      
-      <svg class="modal_icon_close" width="15" height="15">
-      <use href="./images/icons.svg#icon-cross"></use>
-      </svg>
-    </button>
+<div class="backdrop is-hidden" window-modal>
+  <div class="modal" id="modal">
+    <div class="modal__container">
+      <button
+        type="button"
+        class="modal__button-close"
+        window-modal-close
+      ></button>
 
-    <div class="modal_wrap"></div>
-    <ul class="team_wrap"></ul>
-    <span class="loader modal_loader"></span>
+      <div class="modal-card-to-add"></div>
+    </div>
   </div>
+  <div class="darker is-hidden"></div>
 </div>

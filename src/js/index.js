@@ -1,5 +1,13 @@
 import Notiflix from 'notiflix';
-// import './search';
-import { renderMovieCard } from './renderMovieCards.js';
-import getPagination from './pagination.js';
-getPagination();
+import './modal-team.js';
+import './api.js';
+import './pagination.js';
+import './refs.js';
+import './genres.js';
+import './loader.js';
+import './local-storage.js';
+import './modal-window.js';
+import './my-library.js';
+import './scrollTop.js';
+import './search.js';
+import './renderMovieCards.js';

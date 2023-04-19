@@ -65,3 +65,4 @@ const Api = {
 };
 
 export default Api;
+export const API_KEY_IMG = `https://image.tmdb.org/t/p/original`;

@@ -1,13 +1,22 @@
 const refs = {
   moviesGallery: document.querySelector('.gallery__container'),
   pagination: document.querySelector('#pagination'),
-  divBackdrop: document.querySelector('.js-backdrop'),
-  closeModalBtn: document.querySelector('.modal__btn-close'),
   loader: document.querySelector('.loader'),
-  loaderModal: document.querySelector('.modal__loader'),
-  modalRef: document.querySelector('.modal_wrap'),
-  teamRef: document.querySelector('.team__wrap'),
   footer: document.querySelector('.footer'),
+  watchedBtn: document.querySelector(`#watched`),
+  queueBtn: document.querySelector('#queue'),
+
+  windowModal: document.querySelector('[window-modal]'),
+  windowCloseButton: document.querySelector('[window-modal-close]'),
+  darkerBackdrop: document.querySelector('.darker'),
+  modal: document.querySelector('#modal'),
+  modalIframe: document.querySelector('iframe'),
+  trailerBtn: document.querySelector(`#trailer`),
+  addModalCard: document.querySelector('.modal-card-to-add'),
+
+  openTeamModal: document.querySelector('[team-modal-open]'),
+  closeTeamModal: document.querySelector('[team-modal-close]'),
+  teamModal: document.querySelector('[team-modal]'),
 };
 
 export default refs;
