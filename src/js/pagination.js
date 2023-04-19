@@ -3,8 +3,8 @@ import refs from './refs';
 import { renderMovieCard } from './renderMovieCards.js';
 import Loader from './loader';
 import scrollTop from './scrollTop';
-import Pagination from 'tui-pagination';
-import 'tui-pagination/dist/tui-pagination.css';
+// import Pagination from 'tui-pagination';
+// import 'tui-pagination/dist/tui-pagination.css';
 
 const setPagination = totalItems => {
   const options = {

@@ -1,14 +1,11 @@
-import { API } from './api';
-import renderFilmsMarkup from './renderMovieCards';
-// import renderFilmsMarkup from ''; TO DO: (add genres?)
+import Api from './api.js';
+import renderFilmsMarkup from './search-features/renderFilmsMarkup.js';
 
 const searchFormRef = document.querySelector('.form');
 const errorMessage = document.querySelector('.form__search-error');
-const filmsApi = new API();
+const filmsApi = new Api();
 const galleryRef = document.querySelector('.gallery');
-// const galleryRef = document.querySelector(''); TO DO: (add gallery?)
 const paginationRef = document.querySelector('.pagination');
-// const paginationRef = document.querySelector(''); TO DO: (add pagination?)
 
 searchFormRef.addEventListener('submit', onFormSubmit);
 
@@ -27,8 +24,7 @@ async function onFormSubmit(evt) {
       resetErrorStyles();
     }
 
-    renderFilmsMarkup(films);
-    // renderFilmsMarkup(films); TO DO: import ^
+    renderFilmsMarkup(films);   
 
     searchFormRef.reset();
   } catch (error) {
