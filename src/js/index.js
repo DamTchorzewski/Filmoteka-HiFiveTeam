@@ -3,3 +3,5 @@ import Notiflix from 'notiflix';
 import { renderMovieCard } from './renderMovieCards.js';
 import getPagination from './pagination.js';
 getPagination();
+
+import'./search.js';

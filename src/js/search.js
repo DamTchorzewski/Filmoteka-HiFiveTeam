@@ -1,49 +1,71 @@
-import { API } from './api';
-import renderFilmsMarkup from './renderMovieCards';
-// import renderFilmsMarkup from ''; TO DO: (add genres?)
+import Api from './api.js';
+import { renderMovieCard } from './renderMovieCards.js';
+import refs from './refs.js';
 
-const searchFormRef = document.querySelector('.form');
+const input = document.querySelector('.form__input');
+const searchBtn = document.querySelector('.form__btn');
 const errorMessage = document.querySelector('.form__search-error');
-const filmsApi = new API();
-const galleryRef = document.querySelector('.gallery');
-// const galleryRef = document.querySelector(''); TO DO: (add gallery?)
-const paginationRef = document.querySelector('.pagination');
-// const paginationRef = document.querySelector(''); TO DO: (add pagination?)
+const gallery = document.querySelector('.gallery__container');
 
-searchFormRef.addEventListener('submit', onFormSubmit);
+errorMessage.style.display = 'none';
 
-async function onFormSubmit(evt) {
-  evt.preventDefault();
+const searchMovie = e => {
+  e.preventDefault();
+  gallery.innerHTML = '';
+  const searchValue = input.value;
 
-  try {
-    filmsApi.searchQuery = evt.currentTarget.elements.searchQuery.value.trim();
-    if (filmsApi.searchQuery === '') return;
+  Api.getMoviesByQuery(searchValue)
+    .then(data => {
 
-    const films = await filmsApi.getMoviesByQuery();
-    if (films.length === 0) {
-      addErrorStyles();
-      errorMessage.style.display = 'block';
-    } else {
-      resetErrorStyles();
-    }
+      if (data.results.length === 0) {
+        errorMessage.style.display = 'block';
+        refs.pagination.style.display ='none';
+      } else {
+        errorMessage.style.display = 'none';
+        renderMovieCard(data.results);
+        refs.pagination.style.display = 'block';
+      }
 
-    renderFilmsMarkup(films);
-    // renderFilmsMarkup(films); TO DO: import ^
+      // refs.pagination.style.display = 'block';
+    })
+    .catch(error => {
+      console.log(error);
+    });
+};
+searchBtn.addEventListener('click', searchMovie);
 
-    searchFormRef.reset();
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function onFormSubmit(evt) {
+//   evt.preventDefault();
 
-export function resetErrorStyles() {
-  galleryRef.classList.remove('wrong');
-  paginationRef.style.display = 'flex';
-  errorMessage.style.display = 'none';
-}
+//   try {
+//     filmsApi.searchQuery = evt.currentTarget.elements.searchQuery.value.trim();
+//     if (filmsApi.searchQuery === '') return;
 
-export function addErrorStyles() {
-  galleryRef.classList.add('wrong');
-  paginationRef.style.display = 'none';
-  errorMessage.style.display = 'block';
-}
+//     const films = await filmsApi.getMoviesByQuery();
+//     if (films.length === 0) {
+//       addErrorStyles();
+//       errorMessage.style.display = 'block';
+//     } else {
+//       resetErrorStyles();
+//     }
+
+//     renderFilmsMarkup(films);
+//     // renderFilmsMarkup(films); TO DO: import ^
+
+//     searchFormRef.reset();
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// export function resetErrorStyles() {
+//   galleryRef.classList.remove('wrong');
+//   paginationRef.style.display = 'flex';
+//   errorMessage.style.display = 'none';
+// }
+
+// export function addErrorStyles() {
+//   galleryRef.classList.add('wrong');
+//   paginationRef.style.display = 'none';
+//   errorMessage.style.display = 'block';
+// }
