@@ -1,9 +1,8 @@
 import Api from './api.js';
-import renderFilmsMarkup from './search-features/renderFilmsMarkup.js';
+import renderMovieCard from './renderMovieCards.js';
 
 const searchFormRef = document.querySelector('.form');
 const errorMessage = document.querySelector('.form__search-error');
-const filmsApi = new Api();
 const galleryRef = document.querySelector('.gallery');
 const paginationRef = document.querySelector('.pagination');
 
@@ -13,10 +12,11 @@ async function onFormSubmit(evt) {
   evt.preventDefault();
 
   try {
-    filmsApi.searchQuery = evt.currentTarget.elements.searchQuery.value.trim();
-    if (filmsApi.searchQuery === '') return;
+    Api.getTrendingMovies =
+      evt.currentTarget.elements.getTrendingMovies.value.trim();
+    if (Api.getTrendingMovies === '') return;
 
-    const films = await filmsApi.getMoviesByQuery();
+    const films = await Api.getTrendingMovies();
     if (films.length === 0) {
       addErrorStyles();
       errorMessage.style.display = 'block';
@@ -24,7 +24,7 @@ async function onFormSubmit(evt) {
       resetErrorStyles();
     }
 
-    renderFilmsMarkup(films);   
+    renderMovieCard(movies);
 
     searchFormRef.reset();
   } catch (error) {
