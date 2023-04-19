@@ -126,4 +126,24 @@
   height: 3px;
   background-color: var(--color-accent-third);
 }
+.active-library::after {
+  display: block;
+  position: absolute;
+  top: 17px;
+  content: '';
+  background-image: url(/src/images/icons.svg#rectangle-library);
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 3px;
+  background-color: var(--color-accent-third);
+}
+
+img {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 
