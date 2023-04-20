@@ -13,7 +13,7 @@
     background-image: url('../images/header/bglibrary-mobile@2x.jpg');
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     background-image: url('../images/header/bglibrary-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -23,7 +23,7 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: $laptop) {
     background-image: url('../images/header/bglibrary-desktop.jpg');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -40,11 +40,11 @@
     margin-top: 40px;
     padding-bottom: 60px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       gap: 32px;
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: $laptop) {
       gap: 16px;
     }
   }
@@ -62,12 +62,12 @@
     padding-inline: 36px;
     width: 130px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       width: 152px;
       padding-inline: 46px;
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: $laptop) {
       width: 148px;
       padding-inline: 41px;
     }

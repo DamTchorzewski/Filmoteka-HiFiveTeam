@@ -1,17 +1,17 @@
 .container {
   max-width: 500px;
-  @media (min-width: 768px) {
-    max-width: 768px;
+  @media (min-width: $tablet) {
+    max-width: $tablet;
   }
-  @media (min-width: 1280px) {
-    max-width: 1280px;
+  @media (min-width: $laptop) {
+    max-width: $laptop;
   }
-  
+
   width: 100%;
   margin: 0 auto;
   padding: 0 32px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet) {
     padding: 0 20px;
   }
 }
@@ -31,7 +31,7 @@
     background-image: url('../images/header/bghome-mobile@2x.jpg');
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     background-image: url('../images/header/bghome-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -41,7 +41,7 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: $laptop) {
     background-image: url('../images/header/bghome-desktop.jpg');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -63,7 +63,7 @@
     font-weight: var(--font-weight);
     font-size: var(--font-size-fourth);
 
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
       display: none;
     }
 
@@ -145,5 +145,3 @@ img {
 .hidden {
   display: none;
 }
-
-

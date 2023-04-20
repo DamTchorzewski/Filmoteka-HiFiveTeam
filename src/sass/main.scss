@@ -1,8 +1,8 @@
 // UTILS SCSS
 @import './utils/variables';
 @import './utils/visually-hidden';
-@import './utils/modal-window';
 @import './utils/modal-team';
+@import './utils/backdrop';
 // BASE SCSS
 @import './base/normalize';
 @import './base/global';
@@ -16,3 +16,4 @@
 @import './components/pagination';
 @import './components/form';
 @import './components/loader';
+@import './components/modal-window';

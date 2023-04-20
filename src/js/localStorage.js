@@ -1,36 +1,47 @@
 const KEY_WATCHED = 'watched';
 const KEY_QUEUE = 'queue';
-export const watched = getWatchedLocalStorage() || [];
-export const queue = getQueueLocalStorage() || [];
+const watched = getWatched() || [];
+const queue = getQueue() || [];
 
-export function setWatched(arr) {
+function setWatched(arr) {
   try {
     localStorage.setItem(KEY_WATCHED, JSON.stringify(arr));
   } catch (err) {
-    console.error(err);
+    console.error(err.stack);
   }
 }
 
-export function setQueue(arr) {
+function setQueue(arr) {
   try {
     localStorage.setItem(KEY_QUEUE, JSON.stringify(arr));
   } catch (err) {
-    console.error(err);
+    console.error(err.stack);
   }
 }
 
-export function getWatched() {
+function getWatched() {
   try {
     return JSON.parse(localStorage.getItem(KEY_WATCHED));
   } catch (err) {
-    console.error(err);
+    console.error(err.stack);
   }
 }
 
-export function getQueue() {
+function getQueue() {
   try {
     return JSON.parse(localStorage.getItem(KEY_QUEUE));
   } catch (err) {
-    console.error(err);
+    console.error(err.stack);
   }
 }
+
+const Storage = {
+  watched,
+  queue,
+  setWatched,
+  setQueue,
+  getWatched,
+  getQueue,
+};
+
+export default Storage;
