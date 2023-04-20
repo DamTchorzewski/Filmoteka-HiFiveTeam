@@ -29,7 +29,7 @@
     &:focus-visible:not(.tui-is-disabled) {
       color: var(--color-text-sec);
       background-color: var(--color-accent-main);
-      transform: translateY(-3px);
+      transform: translateY(-3px);  
     }
   }
 

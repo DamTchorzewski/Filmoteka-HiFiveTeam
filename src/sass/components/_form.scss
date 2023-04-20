@@ -47,6 +47,19 @@
     height: 16px;
   }
 
+  &__icon:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff6b01;
+    border-radius: 30px;
+  }
+
+  &__icon:hover {
+    color: #ff6b01;
+    box-shadow: 0 0 15px #ff6b01;
+    text-shadow: 0 0 15px #ff6b01;
+    border-radius: 30px;
+  }
+
   &__search-error {
     margin: 0 auto;
     max-width: 400px;
