@@ -1,5 +1,6 @@
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = '82c211a0cb754dbef32a794b59444890';
+const API_KEY_IMG = `https://image.tmdb.org/t/p/original`;
 
 const getTrendingMovies = async (page = 1) => {
   try {
@@ -62,6 +63,8 @@ const Api = {
   getMoviesByQuery,
   getMovieDetails,
   getMovieTrailer,
+  API_KEY_IMG,
 };
 
 export default Api;
+

@@ -3,9 +3,8 @@ import { movieGenres } from './genres.js';
 import refs from './refs.js';
 import noImg from '../images/moviesGallery/noImg.jpg';
 
-const moviesGallery = refs.moviesGallery;
-
-Api.getTrendingMovies().then(data => {
+Api.getTrendingMovies()
+  .then(data => {
     renderMovieCard(data.results);
   })
   .catch(error => {
@@ -13,7 +12,6 @@ Api.getTrendingMovies().then(data => {
   });
 
 export function renderMovieCard(movies) {
-  
   const markup = movies
     .map(
       ({
@@ -63,5 +61,5 @@ export function renderMovieCard(movies) {
       }
     )
     .join('');
-  moviesGallery.insertAdjacentHTML('beforeend', markup);
+  refs.moviesGallery.insertAdjacentHTML('beforeend', markup);
 }
