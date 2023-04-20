@@ -15,6 +15,7 @@ export function renderMovieCard(movies) {
   const markup = movies
     .map(
       ({
+        id,
         title,
         name,
         release_date,
@@ -49,7 +50,7 @@ export function renderMovieCard(movies) {
               : matchedGenres.join(', ')
             : 'Unknown genre';
 
-        return `<li class="movie-container__card">
+        return `<li class="movie-container__card" data-id="${id}">
             <div class="poster"><img class="poster__img" src="${moviePoster}" alt="${title} poster" loading="lazy" /></div>
             <div class="movieInfo">
                <p class="movieInfo__item movieInfo--title">${movieName}</p>

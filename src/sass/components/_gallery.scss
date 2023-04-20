@@ -28,14 +28,14 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 32px;
-      width: 768px;
+      width: $tablet;
       padding: 0 32px;
     }
 
     @media screen and (min-width: $laptop) {
       column-gap: 16px;
       row-gap: 32px;
-      width: 1280px;
+      width: $laptop;
       padding: 0 32px;
     }
   }
@@ -46,7 +46,7 @@
   overflow: hidden;
   border-radius: var(--border-radius);
   border-color: aqua;
-  transition-duration: 250ms;
+  transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 
   &:hover,

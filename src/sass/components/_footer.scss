@@ -4,12 +4,12 @@
   padding-top: 28px;
   padding-bottom: 29px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: 79px;
     padding: 30px 140px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $laptop) {
     height: 77px;
     padding-top: 30px;
     padding-bottom: 28px;
@@ -23,11 +23,10 @@
     flex-direction: column;
     gap: 10px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: center;
-      
     }
   }
 
@@ -37,16 +36,12 @@
     font-weight: 400;
     line-height: 1.17;
     color: var(--color-text-footer);
-
   }
 
   .span__underline {
     text-decoration: underline;
-cursor: pointer;
-   
-      
-    }
-
+    cursor: pointer;
+  }
 
   &__developed {
     width: 236px;
@@ -55,7 +50,7 @@ cursor: pointer;
     text-align: center;
     flex-direction: row;
     justify-content: space-between;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: auto;
       gap: 10px;
     }

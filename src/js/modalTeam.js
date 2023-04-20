@@ -9,19 +9,16 @@ import refs from './refs';
   function clickBackdropCloseModal(e) {
     if (e.target === refs.teamModal) {
       refs.teamModal.classList.add('is-hidden');
-      document.body.classList.toggle('stop-scrolling');
     }
   }
 
   function closeModalByClickEscape(e) {
     if (e.code === 'Escape') {
       refs.teamModal.classList.add('is-hidden');
-      document.body.classList.toggle('stop-scrolling');
     }
   }
 
   function toggleModal() {
     refs.teamModal.classList.toggle('is-hidden');
-    document.body.classList.toggle('stop-scrolling');
   }
 })();

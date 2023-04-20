@@ -43,8 +43,8 @@
   margin-bottom: 35px;
 
   font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-sec);
   line-height: 23px;
   color: $colorAccentMain;
 
@@ -58,8 +58,8 @@
 .modal-student-name {
   font-family: 'Roboto';
 
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-main);
   line-height: 1.33;
   color: $colorTextMain;
   text-transform: uppercase;
@@ -71,8 +71,8 @@
 
 .modal-student-occupation {
   font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-main);
   line-height: 1.33;
   color: $colorAccentMain;
 
@@ -119,7 +119,7 @@
   pointer-events: none;
 
   transform: translateY(100%);
-  transition: transform $transitionDuration, $timingFunction;
+  transition: transform var(--transition-duration), $timingFunction;
 }
 
 .modal-student-soc-list {
@@ -137,7 +137,7 @@
   z-index: 1;
 
   transform: translateY(100%);
-  transition: transform $transitionDuration, $timingFunction;
+  transition: transform var(--transition-duration), $timingFunction;
 }
 .modal-students-container:hover .modal-student-soc-list,
 .modal-students-container:focus .modal-student-soc-list {
@@ -174,7 +174,7 @@
   .modal-student-soc-item
   .modal-student-soc-link
   .modal-student-soc-icon {
-  transition: transform $transitionDuration, $timingFunction;
+  transition: transform var(--transition-duration), $timingFunction;
 }
 
 .modal-student-soc-list {
