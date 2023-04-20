@@ -1,85 +1,309 @@
-// IN PROGRESS
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 100;
+  width: 100%;
+  height: 100%;
 
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
 
-//   width: 100%;
-//   height: 100%;
+  transition: opacity $timingFunction $transitionDuration,
+    visibility $timingFunction $transitionDuration;
+}
 
-//   background: rgba(94, 99, 99, 0.7);
+.darker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-//   overflow-y: auto;
+  z-index: 15;
 
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 15;
+}
 
-// body.show-modal .backdrop {
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: initial;
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
-//   transition: opacity $timingFunction $transitionDuration,
-//     visibility $timingFunction $transitionDuration;
-// }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.2);
+}
 
-// body.show-modal {
-//   overflow-y: hidden;
-// }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 280px;
+  padding: 40px 20px;
+  max-height: 98%;
+  overflow: auto;
 
-// .modal_btn-close {
-//   width: 30px;
-//   height: 30px;
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
-//   padding: 0px;
-//   border: none;
-//   background-color: transparent;
-//   cursor: pointer;
-//   z-index: 50;
-// }
+  z-index: 100;
 
-// .modal {
-//   position: absolute;
+  background-color: $colorBgMain;
 
-//   opacity: 1;
-//   visibility: visible;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-//   padding: 48px 20px 40px 20px;
-//   margin: 0 auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $timingFunction $transitionDuration;
 
-//   background-color: $colorBgMain;
-//   text-align: left;
+  @media screen and (min-width: $tablet) {
+    width: 704px;
+    display: flex;
+  }
 
-//   min-height: 200px;
-//   width: 280px;
+  @media screen and (min-width: $laptop) {
+    width: 806px;
+    padding-left: 10px;
+  }
+}
 
-//   @media screen and (max-width: 767px) {
-//     top: 20px;
-//     left: 50%;
-//     transform: translateX(-50%) scale(0.8);
-//   }
+.modal__button-close {
+  position: absolute;
+  padding: 0;
+  top: 8px;
+  right: 8px;
 
-//   @media screen and (min-width: $tablet) {
-//     padding: 40px 72px 40px 36px;
-//     width: 704px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: transform $timingFunction $transitionDuration;
+}
 
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%) scale(0.8);
-//   }
+.modal__button-close:hover,
+.modal__button-close:focus {
+  transform: scale(1.15);
+}
 
-//   @media screen and (min-width: $laptop) {
-//     min-width: 806px;
-//     padding: 0 12px;
-//   }
-// }
+.modal__icon-close {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.modal__icon-close use {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.modul-card-to-add {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.modal__poster-thumb {
+  display: flex;
+}
+
+.modal__poster {
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 68px;
+
+    width: 264px;
+    height: 374px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 375px;
+    height: auto;
+    margin-right: 16px;
+  }
+}
+
+.modal__info-thumb {
+  @media screen and (min-width: $tablet) {
+    width: 264px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 391px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $colorTextMain;
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 30px;
+  }
+}
+
+.modal__info {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  min-width: 215px;
+  margin-bottom: 20px;
+
+  color: $colorTextThird;
+
+  @media screen and (min-width: $laptop) {
+    min-width: 259px;
+  }
+}
+
+.modal__info-entry {
+  margin-bottom: 8px;
+}
+
+.modal__info-key {
+  padding-right: 55px;
+}
+
+.modal__info-value {
+  color: $colorTextMain;
+}
+
+.modal__info-value-vote {
+  display: inline-block;
+  width: 36px;
+  height: 16px;
+
+  background-color: $colorAccentSec;
+  color: $colorTextMain;
+  background-color: $colorBgSec;
+  border-radius: 5px;
+  padding: 1px 0;
+  text-align: center;
+}
+
+.modal__info-value-vote--accent {
+  color: $colorTextSec;
+  background-color: $colorAccentSec;
+  padding: 1px 0;
+}
+
+.modal__info-value-title {
+  text-transform: uppercase;
+}
+.youtube__icon {
+  fill: rgb(0, 0, 0);
+  background-color: $colorBgSec;
+}
+
+.modal__about {
+  color: $colorTextMain;
+  margin-bottom: 8px;
+
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.modal__about-text {
+  color: $colorTextMain;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.modal__button-container {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $laptop) {
+    padding-left: 5px;
+  }
+}
+
+.modal__button {
+  width: 110px;
+  height: 44px;
+  border-radius: 5px;
+
+  background-color: $colorTextSec;
+  border: 1px solid $colorTextMain;
+
+  transition: var(--timing-function);
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    width: 125px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 136px;
+  }
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  color: $colorTextSec;
+  background-color: $colorAccentSec;
+  border: 1px solid $colorAccentSec;
+}
+
+.modal__button-watched {
+  margin-right: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 15px;
+  }
+}
+
+.modal__button-trailer-wrap {
+  margin-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding-left: 5px;
+  }
+}
+
+.modal__button-trailer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.modal__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+}
+
+.body.modal-open {
+  overflow: hidden;
+}
