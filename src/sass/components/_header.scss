@@ -1,5 +1,12 @@
 .container {
-  // max-width: 1196;
+  max-width: 500px;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+  
   width: 100%;
   margin: 0 auto;
   padding: 0 32px;
@@ -49,34 +56,38 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 49px;
-}
 
-.nav__title {
-  text-decoration: none;
-  color: var(--color-text-sec);
-  font-weight: var(--font-weight);
-  font-size: var(--font-size-fourth);
+  &__title {
+    text-decoration: none;
+    color: var(--color-text-sec);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size-fourth);
 
-  @media (max-width: 768px) {
-    display: none;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(---timing-function);
+
+    &:hover {
+      color: var(--color-accent-sec);
+    }
   }
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(---timing-function);
-}
+  &__image {
+    display: block;
+    margin-top: 5px;
+    height: 24px;
+    width: 23px;
+  }
 
-.nav__title:hover {
-color: var(--color-accent-sec);
-}
-
-.nav__image {
-  margin-top: 5px;
-}
-.nav__logo {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
+  &__logo {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
 }
 
 .navigation__list {
@@ -97,10 +108,10 @@ color: var(--color-accent-sec);
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(---timing-function);
-}
 
-.navigation__item:hover {
-  color: var(--color-accent-sec);
+  &:hover {
+    color: var(--color-accent-sec);
+  }
 }
 
 .active-home::after {
@@ -115,7 +126,6 @@ color: var(--color-accent-sec);
   height: 3px;
   background-color: var(--color-accent-third);
 }
-
 .active-library::after {
   display: block;
   position: absolute;
@@ -125,9 +135,15 @@ color: var(--color-accent-sec);
   background-repeat: no-repeat;
   width: 69px;
   height: 3px;
-background-color: var(--color-accent-third);
+  background-color: var(--color-accent-third);
 }
 
 img {
   display: block;
 }
+
+.hidden {
+  display: none;
+}
+
+

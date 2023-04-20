@@ -1,7 +1,7 @@
 import Api from './api.js';
 import { movieGenres } from './genres.js';
-
-const moviesGallery = document.querySelector('.gallery__container');
+import refs from './refs.js';
+import noImg from '../images/moviesGallery/noImg.jpg';
 
 Api.getTrendingMovies()
   .then(data => {
@@ -22,10 +22,15 @@ export function renderMovieCard(movies) {
         poster_path,
         genre_ids,
       }) => {
-        const moviePoster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
+        const moviePoster = poster_path
+          ? `https://image.tmdb.org/t/p/w500/${poster_path}`
+          : noImg;
+
         const movieDate = release_date
           ? release_date.slice(0, 4)
-          : first_air_date.slice(0, 4);
+          : first_air_date
+          ? first_air_date.slice(0, 4)
+          : 'Unknown year';
         const movieName = title ? title : name;
 
         // Wyszukiwanie gatunku filmowego po id:
@@ -37,11 +42,12 @@ export function renderMovieCard(movies) {
           .filter(Boolean);
 
         // Wyświetlane są tylko dwa pierwsze gatunki filmowe
-        if (matchedGenres.length > 2) {
-          matchedGenres = matchedGenres.slice(0, 2).join(', ') + ' (...)';
-        } else {
-          matchedGenres = matchedGenres.join(', ');
-        }
+        matchedGenres =
+          matchedGenres.length > 0
+            ? matchedGenres.length > 2
+              ? matchedGenres.slice(0, 2).join(', ') + ' (...)'
+              : matchedGenres.join(', ')
+            : 'Unknown genre';
 
         return `<li class="movie-container__card">
             <div class="poster"><img class="poster__img" src="${moviePoster}" alt="${title} poster" loading="lazy" /></div>
@@ -55,5 +61,5 @@ export function renderMovieCard(movies) {
       }
     )
     .join('');
-  moviesGallery.insertAdjacentHTML('beforeend', markup);
+  refs.moviesGallery.insertAdjacentHTML('beforeend', markup);
 }
