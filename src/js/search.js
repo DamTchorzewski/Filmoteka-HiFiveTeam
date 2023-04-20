@@ -26,7 +26,7 @@ const searchMovie = e => {
         refs.pagination.style.display = 'block';
       }
 
-      // refs.pagination.style.display = 'block';
+    
     })
     .catch(error => {
       console.log(error);
