@@ -44,16 +44,7 @@ const searchMovie = (e, page ) => {
             
           
 });
-pagination.on('afterMove', () => {
-  const paginationContainer = refs.pagination.parentNode;
-  if (page === 1) {
-    paginationContainer.appendChild(refs.pagination);
-  } else {
-    const movieCards = document.querySelectorAll('.movie-card');
-    const lastMovieCard = movieCards[movieCards.length - 1];
-    paginationContainer.insertBefore(refs.pagination, lastMovieCard.nextSibling);
-  }
-});
+
       }
     })
     .catch(error => {
