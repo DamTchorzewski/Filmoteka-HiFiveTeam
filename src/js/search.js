@@ -40,7 +40,8 @@ const searchMovie = (e, page ) => {
 
        
         pagination.on('beforeMove', ({ page }) => {
-          searchMovie(e, page); 
+          searchMovie(e, page);
+            
           
 });
 pagination.on('afterMove', () => {
