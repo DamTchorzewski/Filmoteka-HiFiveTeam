@@ -10,6 +10,7 @@ const open = () => {
 const close = () => {
   refs.backdrop.classList.add('visually-hidden');
   refs.modalWindow.classList.add('visually-hidden');
+  refs.body.style.overflow = 'unset';
 };
 
 const closeOnEsc = ({ code }) => {
