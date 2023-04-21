@@ -24,16 +24,6 @@ const searchMovie = (e, page) => {
 
   Api.getMoviesByQuery(searchValue, page)
     .then(data => {
-
-      if (data.results.length === 0) {
-        errorMessage.style.display = 'block';
-        refs.pagination.style.display = 'none';
-      } else {
-        errorMessage.style.display = 'none';
-        renderMovieCard(data.results);
-        refs.pagination.style.display = 'block';
-      }
-
       setTimeout(() => {
         if (data.results.length === 0) {
           errorMessage.style.display = 'block';
