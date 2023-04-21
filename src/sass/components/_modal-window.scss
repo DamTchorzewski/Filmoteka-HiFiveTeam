@@ -185,14 +185,14 @@
     border-radius: var(--border-radius);
     border: 1px solid var(--color-text-main);
     background-color: transparent;
-
+    color: var(--color-text-main);
     transition: background-color var(--transition-duration)
         var(--timing-function),
       color var(--transition-duration) var(--timing-function),
       border var(--transition-duration) var(--timing-function);
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--color-text-sec);
       background-color: var(--color-accent-sec);
       border: none;
