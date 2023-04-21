@@ -8,10 +8,13 @@ const refs = {
   modalWindowInfo: document.querySelector('.modal__info'),
   modalWindowClose: document.querySelector('.modal__btn-close'),
   backdrop: document.querySelector('.backdrop'),
-
+  modalBtns: document.querySelectorAll('.modal__btn'),
   openTeamModal: document.querySelector('[team-modal-open]'),
   closeTeamModal: document.querySelector('[team-modal-close]'),
   teamModal: document.querySelector('[team-modal]'),
+  addToWatchedBtn: document.querySelector('#addToWatched'),
+  addToQueueBtn: document.querySelector('#addToQueue'),
+  watchTrailer: document.querySelector('#watchTrailer'),
 };
 
 export default refs;

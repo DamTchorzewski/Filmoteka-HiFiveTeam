@@ -57,11 +57,27 @@ const getMovieTrailer = async id => {
   }
 };
 
+const getMoviesById = async arr => {
+  try {
+    const arrOfMovies = arr.map(async id => {
+      const resp = await fetch(
+        `${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US`
+      );
+      if (!resp.ok) throw new Error(resp.status);
+      return resp.json();
+    });
+    return await Promise.all(arrOfMovies);
+  } catch (err) {
+    console.error(err.stack);
+  }
+};
+
 const Api = {
   getTrendingMovies,
   getMoviesByQuery,
   getMovieDetails,
   getMovieTrailer,
+  getMoviesById,
 };
 
 export default Api;
