@@ -12,12 +12,12 @@ const gallery = document.querySelector('.gallery__container');
 
 errorMessage.style.display = 'none';
 
-const searchMovie = (e, page ) => {
+const searchMovie = (e, page) => {
   e.preventDefault();
   gallery.innerHTML = '';
   const searchValue = input.value;
 
-  Api.getMoviesByQuery(searchValue, page) 
+  Api.getMoviesByQuery(searchValue, page)
     .then(data => {
       if (data.results.length === 0) {
         errorMessage.style.display = 'block';
@@ -26,31 +26,9 @@ const searchMovie = (e, page ) => {
         errorMessage.style.display = 'none';
         renderMovieCard(data.results);
         refs.pagination.style.display = 'block';
-        
-        
-        
-        
-        const pagination = new Pagination(refs.pagination, {
-          totalItems: data.total_results,
-          itemsPerPage: 20,
-          visiblePages: 5,
-          centerAlign: true,
-          currentPage: page,
-        });
-
-       
-        pagination.on('beforeMove', ({ page }) => {
-          searchMovie(e, page);
-            
-          
-});
-
       }
     })
-    .catch(error => {
-      console.log(error);
-    });
-};
+}
 searchBtn.addEventListener('click', e => searchMovie(e, 1));
 
 // async function onFormSubmit(evt) {
