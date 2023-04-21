@@ -36,6 +36,31 @@ const searchMovie = (e, page) => {
           refs.footer.style.display = 'block';
           renderMovieCard(data.results);
           scrollTop();
+                 
+        const pagination = new Pagination(refs.pagination, {
+          totalItems: data.total_results,
+          itemsPerPage: 20,
+          visiblePages: 5,
+          centerAlign: true,
+          currentPage: page,
+        });
+
+       
+        pagination.on('beforeMove', ({ page }) => {
+          searchMovie(e, page); 
+          
+});
+pagination.on('afterMove', () => {
+  const paginationContainer = refs.pagination.parentNode;
+  if (page === 1) {
+    paginationContainer.appendChild(refs.pagination);
+  } else {
+    const movieCards = document.querySelectorAll('.movie-card');
+    const lastMovieCard = movieCards[movieCards.length - 1];
+    paginationContainer.insertBefore(refs.pagination, lastMovieCard.nextSibling);
+  }
+});
+
         }
       }, 500);
     })
