@@ -1,4 +1,5 @@
 const refs = {
+  body: document.querySelector('body'),
   moviesGallery: document.querySelector('.movies-gallery'),
   galleryContainer: document.querySelector('.gallery__container'),
   pagination: document.querySelector('#pagination'),

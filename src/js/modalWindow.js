@@ -3,12 +3,16 @@ import renderMovieDetails from './renderMovieDetails';
 import Api from './api';
 import refs from './refs';
 import Modal from './modalOpenClose';
+import refresh from './refresh';
 
 const movieDetailsOnClick = async e => {
   try {
     const getLi = e.target.closest('.movie-container__card');
     if (!getLi) return;
+
     const id = getLi.dataset.id;
+    refresh(id);
+
     [...refs.modalBtns].map(btn => btn.setAttribute('data-id', `${id}`));
 
     const movieDetails = await Api.getMovieDetails(id);
@@ -24,7 +28,8 @@ const movieDetailsOnClick = async e => {
     refs.modalWindowInfo.innerHTML = '';
     renderMovieDetails(movieDetails);
 
-    Modal.open();
+    refs.body.style.overflow = 'hidden';
+    setTimeout(() => Modal.open(), 50);
     Modal.closeOnEsc(e);
   } catch (err) {
     console.error(err.stack);

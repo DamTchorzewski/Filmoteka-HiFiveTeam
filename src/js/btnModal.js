@@ -2,47 +2,33 @@ import refs from './refs';
 import Storage from './localStorage';
 
 const toggleMovieToWatched = e => {
-  try {
-    const getId = e.currentTarget.dataset.id;
-    onAddToWatched(getId);
-  } catch (err) {
-    console.error(err.stack);
-  }
-};
-
-const toggleMovieToQueue = e => {
-  try {
-    const getId = e.currentTarget.dataset.id;
-    onAddToQueue(getId);
-  } catch (err) {
-    console.error(err.stack);
-  }
-};
-
-refs.addToQueueBtn.addEventListener('click', e => {
-  toggleMovieToQueue(e);
-
-  if (e.currentTarget.innerText === 'ADD TO QUEUE') {
-    e.currentTarget.classList.add('active-btn');
-    e.currentTarget.innerText = 'REMOVE FROM QUEUE';
-    return;
-  }
-  e.currentTarget.classList.remove('active-btn');
-  e.currentTarget.innerText = 'ADD TO QUEUE';
-});
-
-refs.addToWatchedBtn.addEventListener('click', e => {
-  toggleMovieToWatched(e);
+  const id = e.currentTarget.dataset.id;
+  onAddToWatched(id);
 
   if (e.currentTarget.innerText === 'ADD TO WATCHED') {
     e.currentTarget.classList.add('active-btn');
-    e.currentTarget.innerText = 'REMOVE FROM WATCHED';
-    return;
+    return (e.currentTarget.innerText = 'REMOVE FROM WATCHED');
   }
 
   e.currentTarget.classList.remove('active-btn');
   e.currentTarget.innerText = 'ADD TO WATCHED';
-});
+};
+
+const toggleMovieToQueue = e => {
+  const id = e.currentTarget.dataset.id;
+  onAddToQueue(id);
+
+  if (e.currentTarget.innerText === 'ADD TO QUEUE') {
+    e.currentTarget.classList.add('active-btn');
+    return (e.currentTarget.innerText = 'REMOVE FROM QUEUE');
+  }
+
+  e.currentTarget.classList.remove('active-btn');
+  e.currentTarget.innerText = 'ADD TO QUEUE';
+};
+
+refs.addToWatchedBtn.addEventListener('click', toggleMovieToWatched);
+refs.addToQueueBtn.addEventListener('click', toggleMovieToQueue);
 
 function onAddToWatched(id) {
   if (Storage.watched.includes(id)) {
