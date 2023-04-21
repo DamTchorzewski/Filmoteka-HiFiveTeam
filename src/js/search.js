@@ -8,8 +8,7 @@ const input = document.querySelector('.form__input');
 const searchBtn = document.querySelector('.form__btn');
 const errorMessage = document.querySelector('.form__search-error');
 const gallery = document.querySelector('.gallery__container');
-let pagination; // deklarujemy zmienną poza funkcją
-
+let pagination; 
 errorMessage.style.display = 'none';
 
 const searchMovie = (e, page ) => {
@@ -17,7 +16,7 @@ const searchMovie = (e, page ) => {
   gallery.innerHTML = '';
   const searchValue = input.value;
 
-  Api.getMoviesByQuery(searchValue, page) // dodaj drugi argument z numerem strony
+  Api.getMoviesByQuery(searchValue, page) 
     .then(data => {
       if (data.results.length === 0) {
         errorMessage.style.display = 'block';
@@ -29,19 +28,18 @@ const searchMovie = (e, page ) => {
         
         
         
-        // Utwórz nową instancję Pagination i ustaw jej właściwości
+        
         const pagination = new Pagination(refs.pagination, {
           totalItems: data.total_results,
           itemsPerPage: 20,
           visiblePages: 5,
           centerAlign: true,
-          currentPage: page, // ustaw bieżącą stronę na wartość przekazaną jako argument
+          currentPage: page, 
         });
 
-        // Ustaw słuchacza zdarzeń beforeMove, który będzie wywoływany przy zmianie strony
+        
         pagination.on('beforeMove', ({ page }) => {
-  searchMovie(e, page); // wywołaj funkcję searchMovie z nowym numerem strony
-});
+  searchMovie(e, page); 
 pagination.on('afterMove', () => {
   const paginationContainer = refs.pagination.parentNode;
   if (page === 1) {
