@@ -18,7 +18,7 @@ const renderMovieDetails = ({
 
   const markup = `
   <img class="modal__img" src="${poster}" alt="" width="240" height="357" />
-  <div>
+  <div class="modal__info">
     <h2 class="modal__title">${title}</h2>
     <div class="modal__list-box">
       <ul class="modal__list list">
@@ -29,7 +29,7 @@ const renderMovieDetails = ({
           <p class="modal__list-right">Popularity</p>
         </li>
         <li class="modal__list-item">
-          <p class="modal__list-right">Original Title</p>
+          <p class="modal__list-right">Original&nbspTitle</p>
         </li>
         <li class="modal__list-item">
           <p class="modal__list-right">Genre</p>
