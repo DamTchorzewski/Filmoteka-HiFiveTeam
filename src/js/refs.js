@@ -1,6 +1,8 @@
 const refs = {
   body: document.querySelector('body'),
+  myLibrary: document.querySelector('#myLibrary'),
   moviesGallery: document.querySelector('.movies-gallery'),
+  libraryGallery: document.querySelector('.gallery__library'),
   galleryContainer: document.querySelector('.gallery__container'),
   pagination: document.querySelector('#pagination'),
   loader: document.querySelector('.loader'),
@@ -17,6 +19,8 @@ const refs = {
   addToQueueBtn: document.querySelector('#addToQueue'),
   watchTrailer: document.querySelector('#watchTrailer'),
   myHomeLink: document.querySelector('.my-home'),
+  btnQueue: document.querySelector('#btn-queue'),
+  btnWatched: document.querySelector('#btn-watched'),
 };
 
 export default refs;
