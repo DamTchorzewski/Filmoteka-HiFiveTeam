@@ -5,7 +5,7 @@ const refs = {
   loader: document.querySelector('.loader'),
   footer: document.querySelector('.footer'),
   modalWindow: document.querySelector('.modal'),
-  modalWindowInfo: document.querySelector('.modal__info'),
+  modalWindowInfo: document.querySelector('.modal__wrapper'),
   modalWindowClose: document.querySelector('.modal__btn-close'),
   backdrop: document.querySelector('.backdrop'),
   modalBtns: document.querySelectorAll('.modal__btn'),

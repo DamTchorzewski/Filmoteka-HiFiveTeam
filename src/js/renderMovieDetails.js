@@ -18,7 +18,7 @@ const renderMovieDetails = ({
 
   const markup = `
   <img class="modal__img" src="${poster}" alt="" width="240" height="357" />
-  <div>
+  <div class="modal__info">
     <h2 class="modal__title">${title}</h2>
     <div class="modal__list-box">
       <ul class="modal__list list">
