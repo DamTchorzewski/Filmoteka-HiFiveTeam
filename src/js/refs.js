@@ -18,6 +18,7 @@ const refs = {
   addToWatchedBtn: document.querySelector('#addToWatched'),
   addToQueueBtn: document.querySelector('#addToQueue'),
   watchTrailer: document.querySelector('#watchTrailer'),
+  myHomeLink: document.querySelector('.my-home'),
   btnQueue: document.querySelector('#btn-queue'),
   btnWatched: document.querySelector('#btn-watched'),
 };
