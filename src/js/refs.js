@@ -21,6 +21,9 @@ const refs = {
   myHomeLink: document.querySelector('.my-home'),
   btnQueue: document.querySelector('#btn-queue'),
   btnWatched: document.querySelector('#btn-watched'),
+  errorMessage: document.querySelector('.form__search-error'),
+  searchBtn: document.querySelector('.form__btn'),
+  input: document.querySelector('.form__input'),
 };
 
 export default refs;
