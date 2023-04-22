@@ -10,6 +10,7 @@ const showWatched = async () => {
     const movies = await Api.getMoviesById(moviesId);
 
     renderMovieCard(movies);
+    refs.libraryGallery.style.justifyContent = 'flex-start';
 
     if (!refs.btnWatched.classList.contains('active-btn')) {
       refs.btnWatched.classList.add('active-btn');
@@ -34,6 +35,7 @@ const showQueue = async () => {
     const movies = await Api.getMoviesById(moviesId);
 
     renderMovieCard(movies);
+    refs.libraryGallery.style.justifyContent = 'flex-start';
 
     if (!refs.btnQueue.classList.contains('active-btn')) {
       refs.btnQueue.classList.add('active-btn');
