@@ -15,7 +15,7 @@ errorMessage.style.display = 'none';
 
 const searchMovie = (e, page) => {
   e.preventDefault();
- 
+ errorMessage.style.display = 'none';
   gallery.innerHTML = '';
   const searchValue = input.value;
   Loader.show(refs.loader);
