@@ -1,7 +1,7 @@
 import Api from './api';
 import * as basicLightbox from 'basiclightbox';
 
-const playButton = document.querySelector('.trailerButton'); //potrzeba stworzyć button do karty filmu, który będzie uruchamiał trailer
+const playButton = document.querySelector('.modal__btn-trailer');
 playButton.addEventListener('click', () => {
   Api.getMovieTrailer()
     .then(data => {
