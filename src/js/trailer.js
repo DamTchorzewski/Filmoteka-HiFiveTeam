@@ -2,8 +2,9 @@ import Api from './api';
 import * as basicLightbox from 'basiclightbox';
 
 const playButton = document.querySelector('.modal__btn-trailer');
-playButton.addEventListener('click', () => {
-  Api.getMovieTrailer()
+playButton.addEventListener('click', e => {
+  const movieId = e.currentTarget.dataset.id;
+  Api.getMovieTrailer(movieId)
     .then(data => {
       const trailer = data.results.find(result => result.type === 'Trailer');
 
