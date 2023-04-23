@@ -63,9 +63,12 @@ const getMoviesById = async arr => {
       const resp = await fetch(
         `${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US`
       );
+
       if (!resp.ok) throw new Error(resp.status);
-      return resp.json();
+
+      return await resp.json();
     });
+
     return await Promise.all(arrOfMovies);
   } catch (err) {
     console.error(err.stack);

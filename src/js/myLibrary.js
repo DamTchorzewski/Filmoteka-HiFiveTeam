@@ -1,54 +1,72 @@
 import refs from './refs';
 import Api from './api';
+import grandma from '../images/myLibrary/grandma.jpg';
 import noImg from '../images/moviesGallery/noImg.jpg';
 import Storage from './localStorage';
 
-refs.myLibrary.addEventListener('click', e => {
-  const idMovies = Storage.getWatched();
-  Api.getMoviesById(idMovies)
-    .then(result => {
-      renderMovieCard(result);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  if (!refs.btnWatched.classList.contains('active-btn')) {
-    refs.btnWatched.classList.add('active-btn');
-    refs.btnQueue.classList.remove('active-btn');
-    return;
+const showWatched = async () => {
+  try {
+    const moviesId = Storage.watched;
+    const movies = await Api.getMoviesById(moviesId);
+
+    renderMovieCard(movies);
+    refs.libraryGallery.style.justifyContent = 'flex-start';
+
+    if (!refs.btnWatched.classList.contains('active-btn')) {
+      refs.btnWatched.classList.add('active-btn');
+      refs.btnQueue.classList.remove('active-btn');
+    }
+
+    if (!Storage.watched.length) {
+      refs.libraryGallery.innerHTML = `<li class="grandma"><img src="${grandma}" alt="Grandma, there's nothing here" /></li>`;
+      refs.libraryGallery.style.justifyContent = 'center';
+    }
+  } catch (err) {
+    console.error(err.stack);
   }
+};
+
+refs.btnWatched.addEventListener('click', showWatched);
+showWatched();
+
+const showQueue = async () => {
+  try {
+    const moviesId = Storage.queue;
+    const movies = await Api.getMoviesById(moviesId);
+
+    renderMovieCard(movies);
+    refs.libraryGallery.style.justifyContent = 'flex-start';
+
+    if (!refs.btnQueue.classList.contains('active-btn')) {
+      refs.btnQueue.classList.add('active-btn');
+      refs.btnWatched.classList.remove('active-btn');
+    }
+
+    if (!Storage.queue.length) {
+      refs.libraryGallery.innerHTML = `<li class="grandma"><img src="${grandma}" alt="Grandma, there's nothing here" /></li>`;
+      refs.libraryGallery.style.justifyContent = 'center';
+    }
+  } catch (err) {
+    console.error(err.stack);
+  }
+};
+
+refs.btnQueue.addEventListener('click', showQueue);
+
+refs.addToWatchedBtn.addEventListener('click', () => {
+  if (refs.btnWatched.classList.contains('active-btn')) {
+    return showWatched();
+  }
+
+  showQueue();
 });
 
-refs.btnWatched.addEventListener('click', e => {
-  const idMovies = Storage.getWatched();
-  Api.getMoviesById(idMovies)
-    .then(result => {
-      renderMovieCard(result);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  if (!e.currentTarget.classList.contains('active-btn')) {
-    e.currentTarget.classList.add('active-btn');
-    refs.btnQueue.classList.remove('active-btn');
-    return;
+refs.addToQueueBtn.addEventListener('click', () => {
+  if (refs.btnWatched.classList.contains('active-btn')) {
+    return showWatched();
   }
-});
 
-refs.btnQueue.addEventListener('click', e => {
-  const idMovies = Storage.getQueue();
-  Api.getMoviesById(idMovies)
-    .then(result => {
-      renderMovieCard(result);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  if (!e.currentTarget.classList.contains('active-btn')) {
-    e.currentTarget.classList.add('active-btn');
-    refs.btnWatched.classList.remove('active-btn');
-    return;
-  }
+  showQueue();
 });
 
 function renderMovieCard(movies) {
@@ -95,5 +113,6 @@ function renderMovieCard(movies) {
       }
     )
     .join('');
+
   refs.libraryGallery.innerHTML = markup;
 }

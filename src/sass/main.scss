@@ -1,7 +1,6 @@
 // UTILS SCSS
 @import './utils/variables';
 @import './utils/visually-hidden';
-@import './utils/modal-team';
 @import './utils/backdrop';
 @import './utils/active-btn';
 // BASE SCSS
@@ -18,3 +17,5 @@
 @import './components/form';
 @import './components/loader';
 @import './components/modal-window';
+@import './components/modal-team';
+@import './components/grandma';
