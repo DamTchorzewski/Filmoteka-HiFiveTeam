@@ -14,6 +14,7 @@ playButton.addEventListener('click', () => {
       height="315"
       frameborder="0"></iframe>
 `);
+        instance.show();
       } else {
         console.error('Nie znaleziono zwiastunu');
       }
@@ -22,4 +23,3 @@ playButton.addEventListener('click', () => {
       console.error('Wystąpił błąd:', error);
     });
 });
-instance.show();
