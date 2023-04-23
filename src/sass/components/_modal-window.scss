@@ -1,191 +1,142 @@
 .modal {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  padding: 48px 20px 40px;
   background-color: var(--color-bg-main);
-  width: 280px;
   border-radius: var(--border-radius);
-  -webkit-overflow-scrolling: touch;
-  transition: opacity var(--transition-duration) var(--timing-function);
+  padding: 48px 20px 40px 20px;
+  position: relative;
+  overflow-y: auto;
 
   @media screen and (max-width: 767px) {
     height: 95vh;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-
-  @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    padding: 40px 72px 40px 36px;
-    width: 704px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media screen and (max-width: 800px) and (orientation: landscape) {
-    height: 95vh;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-
-  @media screen and (min-width: $laptop) {
-    min-width: 806px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  &__wrap {
-    @media screen and (min-width: $tablet) {
-      display: flex;
-    }
   }
 
   &__btn-close {
     width: 30px;
     height: 30px;
     border: none;
-    position: absolute;
-    top: 8px;
-    right: 8px;
     background-color: var(--color-bg-main);
+    position: absolute;
+    right: 8px;
+    top: 8px;
   }
 
   &__img {
     border-radius: var(--border-radius);
     margin-bottom: 20px;
+  }
+
+  &__info {
+    width: 240px;
 
     @media screen and (min-width: $tablet) {
-      min-width: 264px;
-      max-height: 374px;
-      margin-right: 68px;
-      margin-bottom: 0;
-    }
-
-    @media screen and (min-width: $laptop) {
-      min-width: 375px;
-      min-height: 478px;
-      margin-right: 16px;
+      max-height: 294px;
+      overflow-y: auto;
     }
   }
 
   &__title {
-    margin-bottom: 20px;
-
+    font-family: var(--font-family);
+    font-style: normal;
     font-weight: var(--font-weight);
     font-size: var(--font-size-sec);
     line-height: calc(23 / 20);
-
-    @media screen and (min-width: $laptop) {
-      font-size: var(--font-size-fourth);
-      line-height: calc(35 / 30);
-    }
+    margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   &__list-box {
-    margin-bottom: 20px;
     display: flex;
+    position: relative;
     gap: 40px;
-
-    @media screen and (min-width: $laptop) {
-      gap: 83px;
-    }
+    margin-bottom: 20px;
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__list-item:nth-child(3).modal__left {
+    text-transform: uppercase;
+  }
+
+  &__list-right {
+    font-family: var(--font-family);
+    font-style: normal;
     font-weight: var(--font-weight);
     font-size: var(--font-size-main);
     line-height: 16px;
     color: var(--color-text-third);
   }
 
-  &__list-item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-  &__list-item:not(:last-child).modal__left {
-    margin-bottom: 10px;
-  }
-
   &__list-left {
+    font-family: var(--font-family);
+    font-style: normal;
     font-weight: var(--font-weight);
     font-size: var(--font-size-main);
-    line-height: calc(14 / 12);
+    line-height: 16px;
     color: var(--color-text-main);
   }
 
   &__list-vote {
-    padding: 1px 9px;
     background-color: var(--color-accent-sec);
-    border-radius: var(--border-radius);
     color: var(--color-text-sec);
+    padding: 1px 9.5px;
+    border-radius: var(--border-radius);
   }
 
   &__list-slash {
-    font-weight: var(--font-weight);
-    font-size: var(--font-size-main);
-    line-height: 16px;
     color: var(--color-text-third);
   }
 
   &__list-votes {
-    padding: 1px 9px;
     background-color: var(--color-bg-sec);
+    padding: 1px 9.5px;
     border-radius: var(--border-radius);
   }
 
   &__subtitle {
-    margin-bottom: 8px;
-
+    font-family: var(--font-family);
+    font-style: normal;
     font-weight: var(--font-weight);
     font-size: var(--font-size-main);
-    line-height: calc(16 / 12);
+    line-height: 16px;
+    margin-bottom: 8px;
   }
 
   &__description {
-    margin-bottom: 20px;
-
+    font-family: var(--font-family);
+    font-style: normal;
     font-weight: var(--font-weight);
     font-size: var(--font-size-main);
     line-height: calc(20 / 12);
-    overflow: auto;
 
-    @media screen and (min-width: $tablet) and (max-width: 1279px) {
-      margin-bottom: 36px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
     }
   }
 
   &__btn-list {
     display: flex;
     gap: 20px;
-
-    @media screen and (min-width: $tablet) {
-      gap: 15px;
-    }
-
-    @media screen and (min-width: $laptop) {
-      margin-left: 24px;
-    }
+    margin-bottom: 15px;
   }
 
   &__btn {
-    width: 110px;
-    height: 40px;
-
-    font-weight: var(--font-weight);
-    font-size: var(--font-size-main);
-    line-height: calc(16 / 12);
-    text-transform: uppercase;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
-
-    border-radius: var(--border-radius);
     border: 1px solid var(--color-text-main);
-    background-color: transparent;
-    color: var(--color-text-main);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-main);
+    width: 110px;
+    height: 44px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--font-weight);
+    font-size: var(--font-size-main);
+    line-height: 16px;
+    text-transform: uppercase;
     padding-inline: 6px;
     transition: background-color var(--transition-duration)
         var(--timing-function),
@@ -198,15 +149,18 @@
       background-color: var(--color-accent-sec);
       border-color: var(--color-accent-sec);
     }
+  }
 
+  &__btn-wrapper {
     @media screen and (min-width: $tablet) {
-      width: 125px;
-      height: 44px;
+      position: absolute;
+      bottom: 60px;
+      right: 71px;
     }
 
     @media screen and (min-width: $laptop) {
-      width: 136px;
-      height: 44px;
+      bottom: 100px;
+      right: 85px;
     }
   }
 
@@ -222,7 +176,129 @@
 
   &__trailer {
     display: flex;
-    justify-content: center;
-    margin-top: 16px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 704px;
+    height: 510px;
+    padding: 40px 72px 40px 36px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img {
+      min-width: 264px;
+      max-height: 374px;
+      margin-right: 68px;
+      margin-bottom: 0;
+    }
+
+    &__btn-list {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__btn:not(.modal__btn-trailer) {
+      width: 125px;
+    }
+
+    &__info {
+      width: 264px;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 806px;
+    height: 558px;
+    padding: 40px 12px;
+
+    &__img {
+      min-width: 375px;
+      min-height: 478px;
+      max-height: 478px;
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+
+    &__btn-list {
+      display: flex;
+      gap: 25px;
+    }
+
+    &__btn:not(.modal__btn-trailer) {
+      width: 136px;
+    }
+
+    &__title {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: var(--font-weight);
+      font-size: var(--font-size-fourth);
+      line-height: calc(23 / 20);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    &__list-box {
+      display: flex;
+      position: relative;
+      gap: 85px;
+      margin-bottom: 20px;
+    }
+
+    &__info {
+      width: 391px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .modal {
+    height: 95vh;
+  }
+
+  .modal__info {
+    max-height: 254px;
+  }
+
+  .modal__btn-wrapper {
+    bottom: -34px;
+  }
+}
+
+@media screen and (min-height: 450px) and (orientation: landscape) {
+  .modal {
+    height: 510px;
+  }
+
+  .modal__info {
+    max-height: 294px;
+  }
+
+  .modal__btn-wrapper {
+    bottom: 60px;
+  }
+}
+
+@media screen and (min-width: $laptop) and (orientation: landscape) {
+  .modal {
+    height: 558px;
+  }
+
+  .modal__btn-wrapper {
+    bottom: 100px;
   }
 }
