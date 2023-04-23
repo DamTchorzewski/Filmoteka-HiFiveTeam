@@ -1,6 +1,7 @@
 #pagination {
-  height: 40px;
-  margin: 0 0 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 
   @media screen and (max-width: 434px) {
     height: 30px;
