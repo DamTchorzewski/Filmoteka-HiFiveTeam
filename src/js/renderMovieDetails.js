@@ -29,7 +29,7 @@ const renderMovieDetails = ({
           <p class="modal__list-right">Popularity</p>
         </li>
         <li class="modal__list-item">
-          <p class="modal__list-right">Original&nbspTitle</p>
+          <p class="modal__list-right">Original Title</p>
         </li>
         <li class="modal__list-item">
           <p class="modal__list-right">Genre</p>
