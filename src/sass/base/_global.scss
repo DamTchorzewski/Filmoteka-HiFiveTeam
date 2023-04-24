@@ -4,6 +4,14 @@
   scroll-behavior: smooth;
 }
 
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
 ul {
   list-style-type: none;
 }
@@ -44,16 +52,4 @@ button {
 
 ::-webkit-scrollbar-corner {
   background-color: transparent;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-main {
-  flex: 1;
-}
-footer {
-  flex-shrink: 0;
 }
