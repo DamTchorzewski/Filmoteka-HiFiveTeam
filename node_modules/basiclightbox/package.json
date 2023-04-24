@@ -1,0 +1,37 @@
+{
+  "name": "basiclightbox",
+  "version": "5.0.4",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "The lightest lightbox ever made",
+  "main": "dist/basicLightbox.min.js",
+  "keywords": [
+    "lightbox",
+    "popup",
+    "modal",
+    "window",
+    "dialog",
+    "gallery",
+    "photo",
+    "responsive",
+    "mobile"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "license": "MIT",
+  "homepage": "https://basiclightbox.electerious.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/basicLightbox.git"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "rosid-handler-js": "^13.0.2",
+    "rosid-handler-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title_and_image_page -->
+    <link rel="icon" type="image/png" href="/film-logo.86bd81e6.png">
+    <title>Library</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="/index.f7626f62.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+  </head>
+
+  <body>
+    <header>
+      <section class="library">
+  <div class="container">
+    <div class="nav">
+      <!-- logo i nazwa po lewej stronie -->
+      <div class="nav__logo">
+        <a href="/index.html"><img class="nav__image" src="/film-logo.86bd81e6.png" alt="Logo "></a>
+
+        <a href="/index.html" class="nav__title"><span> Filmoteka</span> </a>
+      </div>
+
+      <!-- nawigacja home/library -->
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a class="navigation__item my-home" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a id="myLibrary" class="navigation__item active-library" href="/library.html">My library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="library__btns">
+      <button class="library__btn active-btn" id="btn-watched">Watched</button>
+      <button class="library__btn" id="btn-queue">Queue</button>
+    </div>
+  </div>
+</section>
+
+    </header>
+
+    <main>
+      <div class="gallery">
+  <ul class="gallery__container gallery__library"></ul>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+  <div class="footer__wrapper">
+    <p class="footer__copyright">© 2023 | All Rights Reserved |</p>
+
+    <div class="footer__developed">
+      <p class="footer__copyright">Developed with</p>
+      <svg width="14px" height="12.75">
+        <use href="/icons.adfc4680.svg#icon-heart"></use>
+      </svg>
+
+      <span class="footer__copyright">
+        by
+        <a class="span__underline" href="#" team-modal-open="">GoIT Students</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+    </footer>
+
+    <div class="backdrop visually-hidden">
+  <div class="modal visually-hidden">
+    <button type="button" class="modal__btn-close">
+      <svg class="modal__icon__close" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 8L22 22" stroke="black" stroke-width="2"></path>
+        <path d="M8 22L22 8" stroke="black" stroke-width="2"></path>
+      </svg>
+    </button>
+    <div class="modal__wrapper"></div>
+    <div class="modal__btn-wrapper">
+      <ul class="modal__btn-list list">
+        <li>
+          <button type="button" class="modal__btn" id="addToWatched">
+            add to watched
+          </button>
+        </li>
+        <li>
+          <button type="button" class="modal__btn" id="addToQueue">
+            add to queue
+          </button>
+        </li>
+      </ul>
+      <div class="modal__trailer">
+        <button type="button" class="modal__btn modal__btn-trailer" id="watchTrailer">
+          Watch Trailer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal-students is-hidden" team-modal="">
+  <div class="modal-students-box">
+    <h2 class="modal-students-title">Meet our team</h2>
+    <ul class="modal-students-list">
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/DamianT.5084c252.jpg" alt="Team Leader" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Damian Tchorzewski</h3>
+            <p class="modal-student-occupation">Team Leader</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:damiantchorzewski0@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/damiantchorzewski" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/BeniaminB.6ebc33a7.jpg" alt="Scrum Master" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Beniamin Brzeziński</h3>
+            <p class="modal-student-occupation">Scrum Master</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:benek9311@wp.pl">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/benbrzezinski" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/DagmaraS.643ced64.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Dagmara Sobczak</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:daga.sobczak@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/DagmaraSobczak" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/DawidD.fa48a87b.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Dawid Demkowicz</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:dakucp@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/Ddemkowicz" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/DorotaD.defa2471.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Dorota Dudzik</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:doradudzik@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/doradudzik" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/EdytaS.7bb9c4cc.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Edyta Sowa</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:edytaasowa@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/EdytaSowa" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/FilipG.6ecd1da5.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Filip Grzelak</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:skomurlight@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/FilipGk" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/FilipV.1e90def5.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Filip Vukić</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:filipvukic90@gmail.com">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/FVuk" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="modal-students-item">
+        <div class="modal-students-container">
+          <img src="/FilipZ.e623f254.jpg" alt="Developer" class="modal-student-img">
+          <div class="modal-students-details">
+            <h3 class="modal-student-name">Filip Zieliński</h3>
+            <p class="modal-student-occupation">Developer</p>
+          </div>
+          <ul class="modal-student-soc-list">
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="mailto:filip_zielinski@o2.pl">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-envelop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-student-soc-item">
+              <a class="modal-student-soc-link" href="https://github.com/Thebrefff" target="_blank">
+                <svg class="modal-student-soc-icon" width="20" height="20">
+                  <use href="/icons.adfc4680.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <button class="modal-students-close-btn" team-modal-close=""></button>
+  </div>
+</div>
+
+
+    <script src="/library.262ad9a8.js" defer=""></script>
+  </body>
+</html>
