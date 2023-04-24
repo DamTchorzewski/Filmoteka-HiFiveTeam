@@ -59,7 +59,7 @@ const renderMovieDetails = ({
   </div>
   `;
 
-  refs.modalWindowInfo.insertAdjacentHTML('beforeend', markup);
+  refs.modalMovieInfo.insertAdjacentHTML('beforeend', markup);
 };
 
 export default renderMovieDetails;
