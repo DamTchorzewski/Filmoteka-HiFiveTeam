@@ -45,3 +45,15 @@ button {
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+footer {
+  flex-shrink: 0;
+}
