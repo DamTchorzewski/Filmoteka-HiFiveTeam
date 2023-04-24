@@ -6,3 +6,4 @@ import './btnModal.js';
 import './trailer.js';
 import './search.js';
 import './TrendingMoviesPagination.js';
+import './loader.js'
