@@ -2,14 +2,14 @@ import refs from './refs';
 
 const open = () => {
   refs.backdrop.classList.remove('visually-hidden');
-  refs.modalWindow.classList.remove('visually-hidden');
+  refs.modalMovie.classList.remove('visually-hidden');
 
   window.addEventListener('keydown', closeOnEsc);
 };
 
 const close = () => {
   refs.backdrop.classList.add('visually-hidden');
-  refs.modalWindow.classList.add('visually-hidden');
+  refs.modalMovie.classList.add('visually-hidden');
   refs.body.style.overflow = 'unset';
 };
 

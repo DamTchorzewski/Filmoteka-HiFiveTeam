@@ -275,11 +275,11 @@
   }
 
   .modal__btn-wrapper {
-    bottom: -34px;
+    bottom: -32px;
   }
 }
 
-@media screen and (min-height: 450px) and (orientation: landscape) {
+@media screen and (min-height: 500px) and (orientation: landscape) {
   .modal {
     height: 510px;
   }
@@ -300,5 +300,11 @@
 
   .modal__btn-wrapper {
     bottom: 100px;
+  }
+}
+
+@media screen and (max-width: $tablet) and (orientation: landscape) {
+  .modal__info {
+    max-height: none;
   }
 }

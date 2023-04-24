@@ -18,14 +18,14 @@ const movieDetailsOnClick = async e => {
     const movieDetails = await Api.getMovieDetails(id);
 
     if (!movieDetails) {
-      return Notify.failure('Ops, something went wrong!', {
+      return Notify.failure("Ops, movie's info was not found!", {
         position: 'center-center',
         timeout: 3500,
         pauseOnHover: false,
       });
     }
 
-    refs.modalWindowInfo.innerHTML = '';
+    refs.modalMovieInfo.innerHTML = '';
     renderMovieDetails(movieDetails);
 
     refs.body.style.overflow = 'hidden';
@@ -38,7 +38,7 @@ const movieDetailsOnClick = async e => {
 
 refs.galleryContainer.addEventListener('click', movieDetailsOnClick);
 
-refs.modalWindowClose.addEventListener('click', () => {
+refs.modalMovieClose.addEventListener('click', () => {
   Modal.close();
 });
 
