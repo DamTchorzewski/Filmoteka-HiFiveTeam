@@ -1,64 +1,66 @@
-import Api from './api.js';
+import refs from './refs';
+import { setPagination } from './pagination';
+
+import Api from './api';
 import { renderMovieCard } from './renderMovieCards.js';
-import refs from './refs.js';
-import Pagination from 'tui-pagination';
-import 'tui-pagination/dist/tui-pagination.css';
 import Loader from './loader';
 import scrollTop from './scrollTop';
 
 refs.errorMessage.style.display = 'none';
 
-const searchMovie = (e, page) => {
+const searchMovie = async (e, currentPage = 1) => {
   e.preventDefault();
+
   refs.errorMessage.style.display = 'none';
   refs.moviesGallery.innerHTML = '';
+
   const searchValue = refs.input.value.trim();
-  Loader.show(refs.loader);
+Loader.show(refs.loader);
+
   refs.pagination.style.display = 'none';
   refs.footer.style.display = 'none';
 
-  Api.getMoviesByQuery(searchValue, page).then(data => {
-    setTimeout(() => {
-      if (data.results.length === 0) {
-        refs.errorMessage.style.display = 'block';
-        refs.pagination.style.display = 'none';
-        Loader.hide(refs.loader);
-      } else {
-        refs.errorMessage.style.display = 'none';
-        Loader.hide(refs.loader);
-        refs.pagination.style.display = 'block';
-        refs.footer.style.display = 'block';
-        renderMovieCard(data.results);
-        scrollTop();
+  try {
+    const data = await Api.getMoviesByQuery(searchValue, currentPage);
+    const paginationSearch = setPagination(data.total_results, refs);
 
-        const pagination = new Pagination(refs.pagination, {
-          totalItems: data.total_results,
-          itemsPerPage: 20,
-          visiblePages: 5,
-          centerAlign: true,
-          currentPage: page,
-        });
+    if (data.results.length === 0) {
+      refs.errorMessage.style.display = 'block';
+      refs.pagination.style.display = 'none';
+    } else {
+      refs.errorMessage.style.display = 'none';
+      refs.pagination.style.display = 'block';
+      refs.footer.style.display = 'block';
 
-        pagination.on('beforeMove', ({ page }) => {
-          searchMovie(e, page);
-        });
+      renderMovieCard(data.results);
+      scrollTop();
 
-        pagination.on('afterMove', () => {
-          const paginationContainer = refs.pagination.parentNode;
-          if (page === 1) {
-            paginationContainer.appendChild(refs.pagination);
-          } else {
-            const movieCards = document.querySelectorAll('.movie-card');
-            const lastMovieCard = movieCards[movieCards.length - 1];
-            paginationContainer.insertBefore(
-              refs.pagination,
-              lastMovieCard.nextSibling
-            );
-          }
-        });
-      }
-    }, 500);
-  });
-};
+      paginationSearch.on('beforeMove', ({ page }) => {
+        paginationSearch.currentPage = page;
+        searchMovie(e, page);
+      });
 
-refs.searchBtn.addEventListener('click', e => searchMovie(e, 1));
+      paginationSearch.on('afterMove', () => {
+        const firstMovieCard = document.getElementById('first-movie-card');
+        if (firstMovieCard) {
+          firstMovieCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        const paginationContainer = refs.pagination.parentNode;
+const movieCards = document.querySelectorAll('.movie-card');
+const lastMovieCard = movieCards[movieCards.length - 1];
+if (lastMovieCard) {
+  paginationContainer.insertBefore(refs.pagination, lastMovieCard.nextSibling);
+}
+      });
+    };
+  }
+  catch (error) {
+    console.error(error);
+    refs.errorMessage.style.display = 'block';
+    refs.pagination.style.display = 'none';
+  } finally {
+    Loader.hide(refs.loader);
+  }
+}
+
+refs.searchBtn.addEventListener('click', (e) => searchMovie(e, 1));
