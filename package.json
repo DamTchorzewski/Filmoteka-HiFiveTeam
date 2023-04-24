@@ -1,5 +1,5 @@
 {
-  "name": "Filmoteka-HiFiveTeam",
+  "name": "filmoteka-hifiveteam",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://damiantchorzewski.github.io/Filmoteka-HiFiveTeam/src/index.html",
@@ -28,8 +28,7 @@
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4",
-    "tui-pagination": "^3.4.1"
+    "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
