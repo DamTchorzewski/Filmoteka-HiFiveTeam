@@ -15,7 +15,7 @@ const searchMovie = async (e, currentPage = 1) => {
   refs.moviesGallery.innerHTML = '';
 
   const searchValue = refs.input.value.trim();
-Loader.show(refs.loader);
+  Loader.show(refs.loader);
 
   refs.pagination.style.display = 'none';
   refs.footer.style.display = 'none';
@@ -46,21 +46,23 @@ Loader.show(refs.loader);
           firstMovieCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         const paginationContainer = refs.pagination.parentNode;
-const movieCards = document.querySelectorAll('.movie-card');
-const lastMovieCard = movieCards[movieCards.length - 1];
-if (lastMovieCard) {
-  paginationContainer.insertBefore(refs.pagination, lastMovieCard.nextSibling);
-}
+        const movieCards = document.querySelectorAll('.movie-card');
+        const lastMovieCard = movieCards[movieCards.length - 1];
+        if (lastMovieCard) {
+          paginationContainer.insertBefore(
+            refs.pagination,
+            lastMovieCard.nextSibling
+          );
+        }
       });
-    };
-  }
-  catch (error) {
+    }
+  } catch (error) {
     console.error(error);
     refs.errorMessage.style.display = 'block';
     refs.pagination.style.display = 'none';
   } finally {
     Loader.hide(refs.loader);
   }
-}
+};
 
-refs.searchBtn.addEventListener('click', (e) => searchMovie(e, 1));
+refs.searchBtn.addEventListener('click', e => searchMovie(e, 1));
