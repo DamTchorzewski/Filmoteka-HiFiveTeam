@@ -1,6 +1,7 @@
 import './modalTeam.js';
-import getPagination from './pagination.js';
-getPagination();
+import './pagination';
 import './search.js';
 import './modalWindow.js';
 import './btnModal.js';
+import './search.js';
+import './TrendingMoviesPagination.js'
