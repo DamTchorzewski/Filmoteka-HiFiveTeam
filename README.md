@@ -1,15 +1,11 @@
 # :film_projector::film_strip: Filmoteka :tickets::popcorn:
 
-<div style="display:flex; align-items:center;">
-  <img src="https://i.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.webp" alt="Filmoteka" width="300" height="200">
-  <p style="margin-left: 20px;">The "Filmoteka"
-    website created by the HiFiveTeam team is a place where you can find reviews and
-    descriptions of films that are worth watching. It is an ideal source of
-    inspiration for cinema lovers and people who want to expand their knowledge of
-    the film world. Intuitive and clear navigation will allow you to quickly find
-    the videos you are interested in and read the descriptions and ratings of other
-    users. Go to the website and allow yourself unforgettable movie screenings!</p>
-</div>
+<table>
+  <tr>
+    <td><img src="https://i.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.webp" alt="Filmoteka" width="400"></td>
+    <td><p>The "Filmoteka" website created by the HiFiveTeam team is a place where you can find reviews and descriptions of films that are worth watching. It is an ideal source of inspiration for cinema lovers and people who want to expand their knowledge of the film world. Intuitive and clear navigation will allow you to quickly find the videos you are interested in and read the descriptions and ratings of other users. Go to the website and allow yourself unforgettable movie screenings!</p></td>
+  </tr>
+</table>
 
 ## :hammer_and_wrench: Languages and Tools :
 
