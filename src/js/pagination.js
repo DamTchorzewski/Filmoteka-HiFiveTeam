@@ -1,7 +1,7 @@
 import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
 
-export const setPagination = (totalItems, refs) => {
+export const setPagination = (totalItems, currentPage, container) => {
   const options = {
     totalItems,
     itemsPerPage: 20,
@@ -9,7 +9,7 @@ export const setPagination = (totalItems, refs) => {
     centerAlign: true,
   };
 
-  const pagination = new Pagination(refs.pagination, options);
+  const pagination = new Pagination(container, options);
 
   return pagination;
 };

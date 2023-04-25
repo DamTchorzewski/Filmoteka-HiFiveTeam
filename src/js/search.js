@@ -1,10 +1,11 @@
 import refs from './refs';
 import { setPagination } from './pagination';
-
 import Api from './api';
 import { renderMovieCard } from './renderMovieCards.js';
 import Loader from './loader';
 import scrollTop from './scrollTop';
+
+let paginationSearch;
 
 refs.errorMessage.style.display = 'none';
 
@@ -22,8 +23,7 @@ const searchMovie = async (e, currentPage = 1) => {
 
   try {
     const data = await Api.getMoviesByQuery(searchValue, currentPage);
-    const paginationSearch = setPagination(data.total_results, refs);
-
+  const pagination = setPagination(data.total_results, refs.pagination);
     if (data.results.length === 0) {
       refs.errorMessage.style.display = 'block';
       refs.pagination.style.display = 'none';
@@ -35,26 +35,32 @@ const searchMovie = async (e, currentPage = 1) => {
       renderMovieCard(data.results);
       scrollTop();
 
-      paginationSearch.on('beforeMove', ({ page }) => {
-        paginationSearch.currentPage = page;
-        searchMovie(e, page);
-      });
+      if (!paginationSearch) {
+        paginationSearch = setPagination(
+          data.total_results,
+          currentPage,
+          refs.pagination
+        );
 
-      paginationSearch.on('afterMove', () => {
-        const firstMovieCard = document.getElementById('first-movie-card');
-        if (firstMovieCard) {
-          firstMovieCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        const paginationContainer = refs.pagination.parentNode;
-        const movieCards = document.querySelectorAll('.movie-card');
-        const lastMovieCard = movieCards[movieCards.length - 1];
-        if (lastMovieCard) {
-          paginationContainer.insertBefore(
-            refs.pagination,
-            lastMovieCard.nextSibling
-          );
-        }
-      });
+        paginationSearch.on('beforeMove', ({ page }) => {
+          paginationSearch.currentPage = page;
+          searchMovie(e, page);
+        });
+
+        paginationSearch.on('afterMove', () => {
+          const paginationContainer = refs.pagination.parentNode;
+          const movieCards = document.querySelectorAll('.movie-card');
+          const lastMovieCard = movieCards[movieCards.length - 1];
+          if (lastMovieCard) {
+            paginationContainer.insertBefore(
+              refs.pagination,
+              lastMovieCard.nextSibling
+            );
+          }
+        });
+      } else {
+        paginationSearch.reset(data.total_results);
+      }
     }
   } catch (error) {
     console.error(error);
@@ -65,4 +71,4 @@ const searchMovie = async (e, currentPage = 1) => {
   }
 };
 
-refs.searchBtn.addEventListener('click', e => searchMovie(e, 1));
+refs.searchBtn.addEventListener('click', (e) => searchMovie(e, 1));
