@@ -30,7 +30,7 @@ screenings!
   <img src="https://browsersl.ist/browserlist-e428d541.svg" title="Browserslist" alt="Browserslist" width="40" height="40"/>&nbsp;
 </div>
 
-## CO-CREATORS
+## HiFiveTeam Co-Creators
 
 - Damian Tchorzewski \*Team Lead (https://github.com/damiantchorzewski):
 - Beniamin Brzezińśki \*Scrum Master (https://github.com/benbrzezinski):
