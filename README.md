@@ -1,4 +1,9 @@
-# Filmoteka
+# <a href="./index.html" class="nav__title">
+
+          <svg class="nav__icon">
+            <use href="./images/icons.svg#icon-film"></use></svg
+          ><span class="nav__text">Filmoteka</span></a
+        >
 
 The "Filmoteka" website created by the HiFiveTeam team is a place where you can
 find reviews and descriptions of films that are worth watching. It is an ideal
