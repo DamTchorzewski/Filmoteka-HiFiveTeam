@@ -1,31 +1,14 @@
-# PROJECT
+# Filmoteka
 
-First GOIT group project - HTML & CSS section
+The "Filmoteka" website created by the HiFiveTeam team is a place where you can
+find reviews and descriptions of films that are worth watching. It is an ideal
+source of inspiration for cinema lovers and people who want to expand their
+knowledge of the film world. Intuitive and clear navigation will allow you to
+quickly find the videos you are interested in and read the descriptions and
+ratings of other users. Go to the website and allow yourself unforgettable movie
+screenings!
 
-## TECHNOLOGIES
-
-- HTML
-- CSS
-- SASS
-- JS
-  - Mobile (Hamburger) menu
-  - Forms
-  - Photo Sliders
-
-## WORKLOAD
-
-- Filip V (https://github.com/FVuk): Team Lead, Trello, Code Reviews, HTML & CSS
-  header, Global variables and SVG icons
-- Dorota D (https://github.com/doradudzik): Code reviews, Contacts
-- Edyta S (https://github.com/EdytaSowa): Adventages section, Gallery
-- Emilia Sz (https://github.com/EmiliaSzczepaniak52): Adventages section,
-  Gallery
-- Emilia Z (https://github.com/ESZ-98): Scrum Master, Customer Reviews section
-- Filip G (https://github.com/FilipGk): About section
-- Filip K (https://github.com/Filip-Kuta): Footer
-- Filip Z (https://github.com/Thebrefff): Products section
-
-### :hammer_and_wrench: Languages and Tools :
+## :hammer_and_wrench: Languages and Tools :
 
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
@@ -48,3 +31,16 @@ First GOIT group project - HTML & CSS section
   <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-plain.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp;
   <img src="https://browsersl.ist/browserlist-e428d541.svg" title="Browserslist" alt="Browserslist" width="40" height="40"/>&nbsp;
 </div>
+
+## WORKLOAD
+
+- Filip V (https://github.com/FVuk): Team Lead, Trello, Code Reviews, HTML & CSS
+  header, Global variables and SVG icons
+- Dorota D (https://github.com/doradudzik): Code reviews, Contacts
+- Edyta S (https://github.com/EdytaSowa): Adventages section, Gallery
+- Emilia Sz (https://github.com/EmiliaSzczepaniak52): Adventages section,
+  Gallery
+- Emilia Z (https://github.com/ESZ-98): Scrum Master, Customer Reviews section
+- Filip G (https://github.com/FilipGk): About section
+- Filip K (https://github.com/Filip-Kuta): Footer
+- Filip Z (https://github.com/Thebrefff): Products section
