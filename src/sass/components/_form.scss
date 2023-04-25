@@ -10,11 +10,11 @@
     width: 100%;
     background: transparent;
     border: 0;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid var(--color-text-sec);
     outline: none;
 
     padding-bottom: 4px;
-    color: white;
+    color: var(--color-text-sec);
     font-weight: 400;
     font-size: var(--font-size-third);
 
@@ -45,19 +45,15 @@
   &__icon {
     width: 17px;
     height: 16px;
-  }
-
-  &__icon:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #ff6b01;
-    border-radius: 30px;
+    transition-property: filter, border-radius;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(---timing-function);
   }
 
   &__icon:hover {
-    color: #ff6b01;
-    box-shadow: 0 0 15px #ff6b01;
-    text-shadow: 0 0 15px #ff6b01;
-    border-radius: 30px;
+    -webkit-filter: drop-shadow(0 0 4px var(--color-accent-sec));
+    filter: drop-shadow(0 0 4px var(--color-accent-sec));
+    border-radius: 50px;
   }
 
   &__search-error {
