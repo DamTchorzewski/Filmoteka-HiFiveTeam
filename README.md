@@ -1,103 +1,50 @@
-# Parcel template
+# PROJECT
 
-Ten projekt został stworzony przy pomocy Parcel. W celu zapoznania się i
-skonfigurowania dodatkowych opcji [zobacz dokumentację](https://parceljs.org/)
+First GOIT group project - HTML & CSS section
 
-## Przygotowanie nowego projektu
+## TECHNOLOGIES
 
-1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js.
-   [Ściągnij i zainstaluj](https://nodejs.org/en/), jeśli jest taka potrzeba.
-2. Sklonuj to repozytorium.
-3. Zmień nazwę folderu z `parcel-project-template` na nazwę swojego projektu.
-4. Utwórz nowe, puste repozytorium na GitHub.
-5. Otwórz projekt w VSCode, uruchom terminal i zwiąż projekt z repozytorium
-   GitHub
-   [zgodnie z instrukcją](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Utwórz zależność projektu w terminalu przez polecenie `npm install` .
-7. Włącz tryb edycji, wykonując polecenie `npm start`.
-8. Przejdź w przeglądarce pod adres
-   [http://localhost:1234](http://localhost:1234). Ta strona będzie się
-   automatycznie odświeżać po dokonaniu zmian w plikach projektu.
+- HTML
+- CSS
+- SASS
+- JS
+  - Mobile (Hamburger) menu
+  - Forms
+  - Photo Sliders
 
-## Pliki i foldery
+## WORKLOAD
 
-- Wszystkie partiale plików stylów powinny znajdować się w folderze `src/sass` i
-  importować się w pliki stylów stron. Na przykład dla `index.html` plik stylów
-  nazywa się `index.scss`.
-- Obrazy dodawaj do pliku `src/images`. Moduł zbierający optymalizuje je, ale
-  tylko przy deploymencie wersji produkcyjnej projektu. Wszystko to zachodzi w
-  chmurze, aby nie obciążać twojego komputera, ponieważ na słabszym sprzęcie
-  może to zająć sporo czasu.
+- Filip V (https://github.com/FVuk): Team Lead, Trello, Code Reviews, HTML & CSS
+  header, Global variables and SVG icons
+- Dorota D (https://github.com/doradudzik): Code reviews, Contacts
+- Edyta S (https://github.com/EdytaSowa): Adventages section, Gallery
+- Emilia Sz (https://github.com/EmiliaSzczepaniak52): Adventages section,
+  Gallery
+- Emilia Z (https://github.com/ESZ-98): Scrum Master, Customer Reviews section
+- Filip G (https://github.com/FilipGk): About section
+- Filip K (https://github.com/Filip-Kuta): Footer
+- Filip Z (https://github.com/Thebrefff): Products section
 
-## Deployment
+### :hammer_and_wrench: Languages and Tools :
 
-Aby skonfigurować deployment projektu należy wykonać kilka dodatkowych kroków
-konfigurowania twojego repozytorium. Wejdź w zakładkę `Settings` i w podsekcji
-`Actions` wybierz punkt `General`.
-
-![GitHub actions settings](./assets/actions-config-step-1.png)
-
-Przejdź do ostatniej sekcji, w której upewnij się, że wybrane opcje są takie
-same jak na następnym obrazku i kliknij `Save`. Bez tych ustawień w module
-zbierającym będzie zbyt mało pozwoleń dla automatyzacji procesu deploymentu.
-
-![GitHub actions settings](./assets/actions-config-step-2.png)
-
-Wersja produkcyjna projektu będzie automatycznie gromadzić się i deployować na
-GitHub Pages w gałęzi `gh-pages` za każdym razem, gdy aktualizuje się gałąź
-`main`. Na przykład po bezpośrednim pushu lub przyjętym pull requeście. W tym
-celu niezbędne jest, aby w pliku `package.json` wyedytować pole `homepage` i
-skrypt `build`, zamieniając `your_username` i `your_repo_name` na swoje nazwy i
-wysłać zmiany na GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
-```
-
-Dalej należy wejść w ustawienia repozytorium GitHub (`Settings` > `Pages`) i
-wystawić dystrybucję wersji produkcyjnej z folderu `/root` gałęzi `gh-pages`,
-jeśli nie zrobiło się to automatycznie.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Status deploymentu
-
-Status deploymentu ostatniego commitu wyświetla się na ikonie obok jego
-identyfikatora.
-
-- ** Żółty kolor** - wykonuje się zbudowanie i deployment projektu.
-- ** Zielony kolor** - deployment zakończył się sukcesem.
-- ** Czerwony kolor** - w czasie lintingu, budowania lub deplymentu pojawił się
-  błąd.
-
-Więcej informacji o statusie można zobaczyć klikając na ikonkę i w wyskakującym
-oknie przejść do odnośnika `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Działająca strona
-
-Po jakimś czasie, zazwyczaj kilku minut, działającą stronę będzie można zobaczyć
-pod adresem wskazanym w wyedytowanej właściwości `homepage`. Na przykład tu
-znajduje się odnośnik do działającej strony dla tego repozytorium
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `Console` nie ma
-błędów związanych z nieprawidłowymi ścieżkami do plików projektu CSS i JS
-(**404**). Najprawdopodobniej wprowadzona została nieprawidłowa wartość
-właściwości `homepage` lub skryptu `build` w pliku `package.json`.
-
-## Jak to działa
-
-![How it works](./assets/how-it-works.png)
-
-1. Po każdym pushu w gałęzi `main` repozytorium GitHub, włącza się specjalny
-   skrypt (GitHub Action) z pliku `.github/workflows/deploy.yml`.
-2. Wszystkie pliki repozytorium kopiują się na serwer, gdzie projekt
-   inicjalizuje się i buduje przed deploymentem.
-3. Jeżeli wszystkie kroki zakończyły się sukcesem, zbudowana wersja produkcyjna
-   plików projektu wysyła się w gałąź `gh-pages`. W przeciwnym razie, w logu
-   wykonania skryptu wskazane zostanie, w czym jest problem.
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg" title="GitHub" alt="GitHub" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" title="Visual Studio Code" alt="Visual Studio Code" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/bash/bash-original.svg" title="Bash" alt="Bash" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="Sass" alt="Sass" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/npm/npm-original-wordmark.svg" title="npm" alt="npm" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
+  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" title="Terminal" alt="Terminal" width="40" height="40"/>&nbsp;
+  <img src="https://parceljs.org/avatar.66e613b2.avif" title="Parcel" alt="Parcel" width="40" height="40"/>&nbsp;
+  <img src="https://www.ag-grid.com/images/fw-logos/webpack.svg" title="Webpack" alt="Webpack" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/codepen/codepen-plain.svg" title="CodePen" alt="CodePen" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/slack/slack-original.svg" title="Slack" alt="Slack" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-plain.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp;
+  <img src="https://browsersl.ist/browserlist-e428d541.svg" title="Browserslist" alt="Browserslist" width="40" height="40"/>&nbsp;
+</div>
