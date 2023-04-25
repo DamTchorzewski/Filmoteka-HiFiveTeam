@@ -1,5 +1,6 @@
-import refs from './refs';
+import Pagination from 'tui-pagination';
 import { setPagination } from './pagination';
+import refs from './refs';
 import Api from './api';
 import { renderMovieCard } from './renderMovieCards.js';
 import Loader from './loader';
@@ -23,7 +24,8 @@ const searchMovie = async (e, currentPage = 1) => {
 
   try {
     const data = await Api.getMoviesByQuery(searchValue, currentPage);
-  const pagination = setPagination(data.total_results, refs.pagination);
+    const pagination = setPagination(data.total_results, refs.pagination);
+
     if (data.results.length === 0) {
       refs.errorMessage.style.display = 'block';
       refs.pagination.style.display = 'none';
@@ -38,24 +40,25 @@ const searchMovie = async (e, currentPage = 1) => {
       if (!paginationSearch) {
         paginationSearch = setPagination(
           data.total_results,
-          currentPage,
           refs.pagination
         );
 
-        paginationSearch.on('beforeMove', ({ page }) => {
-          paginationSearch.currentPage = page;
-          searchMovie(e, page);
-        });
+        paginationSearch.on('beforeMove', async ({ page }) => {
+          refs.moviesGallery.innerHTML = '';
+          Loader.show(refs.loader);
+          refs.pagination.style.display = 'none';
+          refs.footer.style.display = 'none';
 
-        paginationSearch.on('afterMove', () => {
-          const paginationContainer = refs.pagination.parentNode;
-          const movieCards = document.querySelectorAll('.movie-card');
-          const lastMovieCard = movieCards[movieCards.length - 1];
-          if (lastMovieCard) {
-            paginationContainer.insertBefore(
-              refs.pagination,
-              lastMovieCard.nextSibling
-            );
+          try {
+            const data = await Api.getMoviesByQuery(searchValue, page);
+            renderMovieCard(data.results);
+            scrollTop();
+          } catch (error) {
+            console.error(error);
+          } finally {
+            Loader.hide(refs.loader);
+            refs.pagination.style.display = 'block';
+            refs.footer.style.display = 'block';
           }
         });
       } else {

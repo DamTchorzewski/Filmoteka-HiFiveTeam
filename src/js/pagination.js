@@ -9,7 +9,7 @@ export const setPagination = (totalItems, currentPage, container) => {
     centerAlign: true,
   };
 
-  const pagination = new Pagination(container, options);
+  const pagination = new Pagination('pagination', options);
 
   return pagination;
 };
