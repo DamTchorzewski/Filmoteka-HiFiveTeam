@@ -1,6 +1,6 @@
 # :film_projector::film_strip: Filmoteka :tickets::popcorn:
 
-<div></div>![](https://i.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.webp)<div> 
+<div>![](https://i.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.webp)</div> 
 <span>The "Filmoteka"
 website created by the HiFiveTeam team is a place where you can find reviews and
 descriptions of films that are worth watching. It is an ideal source of
