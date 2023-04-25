@@ -7,7 +7,8 @@
   <div>
     <img src="https://i.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.webp" alt="Movie theater gif">
   </div>
-</div> 
+</div>
+
 ## :hammer_and_wrench: Languages and Tools :
 
 <div>
