@@ -32,13 +32,12 @@ screenings!
 
 ## CO-CREATORS
 
-- Damian Tchorzewski (https://github.com/damiantchorzewski): Team Lead, Trello,
-  Code Reviews, HTML & CSS header, Global variables and SVG icons
-- Dorota D (https://github.com/doradudzik):
-- Edyta S (https://github.com/EdytaSowa):
-- Filip G (https://github.com/FilipGk):
-- Filip Z (https://github.com/Thebrefff):
--
-- Dawid D (https://github.com/Ddemkowicz):
-- Filip V (https://github.com/FVuk):
-- Dagmara S (https://github.com/DagmaraSobczak):
+- Damian Tchorzewski \*Team Lead (https://github.com/damiantchorzewski):
+- Beniamin Brzezińśki \*Scrum Master (https://github.com/benbrzezinski):
+- Dorota Dudzik \*Developer (https://github.com/doradudzik):
+- Edyta Sowa \*Developer (https://github.com/EdytaSowa):
+- Filip Vukić \*Developer (https://github.com/FVuk):
+- Dagmara Sobczyk \*Developer (https://github.com/DagmaraSobczak):
+- Filip G \*Developer (https://github.com/FilipGk):
+- Filip Z \*Developer (https://github.com/Thebrefff):
+- Dawid D \*Developer (https://github.com/Ddemkowicz):
