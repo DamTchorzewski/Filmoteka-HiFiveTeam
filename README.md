@@ -1,4 +1,4 @@
-# Filmoteka film_projector::film_strip:
+# Filmoteka :film_projector: :film_strip:
 
 The "Filmoteka" website created by the HiFiveTeam team is a place where you can
 find reviews and descriptions of films that are worth watching. It is an ideal
