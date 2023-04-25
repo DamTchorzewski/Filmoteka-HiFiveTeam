@@ -76,7 +76,8 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(---timing-function);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background-color: var(--color-accent-sec);
       border-color: var(--color-accent-sec);
       transform: scale(1.05);
@@ -89,7 +90,7 @@
   position: absolute;
   top: 17px;
   content: '';
-  background-image: url(/src/images/icons.svg#rectangle-library);
+  background-image: url(../images/icons.svg#rectangle-library);
   background-repeat: no-repeat;
   width: 69px;
   height: 3px;
