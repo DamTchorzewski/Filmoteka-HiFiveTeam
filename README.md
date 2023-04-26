@@ -60,7 +60,7 @@
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dagmara Sobczyk</b><br>
-      (https://github.com/DagmaraSobczak)
+      (https://github.com/DagmaraSobczak)<br>
       Footer home and library, implementation of the movie trailer display.
     </td>
   </tr>
