@@ -1,4 +1,4 @@
-<h1 style="align-item: center;">📽️🎞️ Filmoteka 🎟️🍿</h1>
+# :film_projector::film_strip: Filmoteka :tickets::popcorn:
 
 <table>
   <tr>
