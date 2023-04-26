@@ -1,4 +1,4 @@
-# :film_projector: :film_strip: Filmoteka :tickets: :popcorn:
+# :film_projector: Filmoteka :film_strip:
 
 <table>
   <tr>
