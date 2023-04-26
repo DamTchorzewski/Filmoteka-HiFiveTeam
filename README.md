@@ -68,7 +68,7 @@
     <td align="center">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer <br>
-      <b>Dawid D</b> <br>
+      <b>Dawid Demkowicz</b> <br>
       (https://github.com/Ddemkowicz)
     </td>
     <td></td>
