@@ -7,6 +7,18 @@
   </tr>
 </table>
 
+## HiFiveTeam Co-Creators
+
+- Damian Tchorzewski 👨‍💻Team Lead (https://github.com/damiantchorzewski):
+- Beniamin Brzezińśki 👨‍💻Scrum Master (https://github.com/benbrzezinski):
+- Dorota Dudzik 👩‍💻Developer (https://github.com/doradudzik):
+- Edyta Sowa 👩‍💻Developer (https://github.com/EdytaSowa):
+- Filip Vukić 👨‍💻Developer (https://github.com/FVuk):
+- Dagmara Sobczyk 👩‍💻Developer (https://github.com/DagmaraSobczak):
+- Filip G 👨‍💻Developer (https://github.com/FilipGk):
+- Filip Z 👨‍💻Developer (https://github.com/Thebrefff):
+- Dawid D 👨‍💻Developer (https://github.com/Ddemkowicz):
+
 ## :hammer_and_wrench: Languages and Tools :
 
 <div>
@@ -28,15 +40,3 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-plain.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp;
   <img src="https://browsersl.ist/browserlist-e428d541.svg" title="Browserslist" alt="Browserslist" width="40" height="40"/>&nbsp;
 </div>
-
-## HiFiveTeam Co-Creators
-
-- Damian Tchorzewski 👨‍💻Team Lead (https://github.com/damiantchorzewski):
-- Beniamin Brzezińśki 👨‍💻Scrum Master (https://github.com/benbrzezinski):
-- Dorota Dudzik 👩‍💻Developer (https://github.com/doradudzik):
-- Edyta Sowa 👩‍💻Developer (https://github.com/EdytaSowa):
-- Filip Vukić 👨‍💻Developer (https://github.com/FVuk):
-- Dagmara Sobczyk 👩‍💻Developer (https://github.com/DagmaraSobczak):
-- Filip G 👨‍💻Developer (https://github.com/FilipGk):
-- Filip Z 👨‍💻Developer (https://github.com/Thebrefff):
-- Dawid D 👨‍💻Developer (https://github.com/Ddemkowicz):
