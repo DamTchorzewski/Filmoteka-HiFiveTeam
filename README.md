@@ -10,9 +10,9 @@
 ## HiFiveTeam Co-Creators
 
 <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%">Damian
-Tchorzewski
+Tchorzewski Team Lead (https://github.com/damiantchorzewski):
 
-Team Lead (https://github.com/damiantchorzewski):
+-
 
 - Beniamin Brzezińśki 👨‍💻Scrum Master (https://github.com/benbrzezinski): Code
   Reviwer,
