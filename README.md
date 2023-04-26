@@ -30,9 +30,8 @@
     <td align="center">
      <b>Dorota Dudzik</b><br>
     <a href="https://github.com/doradudzik">
-      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
+      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius:50%"></a><br>
       Developer<br>
-     
       Render cards films, Cards films, app, style, animations. 
     </td>
     <td align="center">
