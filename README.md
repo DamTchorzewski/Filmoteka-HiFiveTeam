@@ -25,7 +25,7 @@
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b><br>
       (https://github.com/benbrzezinski)<br>
-      Code Reviwer, planning meeting, Api with feach, LocalStorage, function add and delate film, add styles global, Trello
+      Code Reviwer, planning meeting, Api with feach, LocalStorage, function add and delate film, add styles global, Trello.
       </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@
       Developer<br>
       <b>Dorota Dudzik</b><br>
       (https://github.com/doradudzik)<br>
-      Render cards films, Cards films, app, style, animations 
+      Render cards films, Cards films, app, style, animations. 
     </td>
     <td align="center">
     <a href="https://github.com/EdytaSowa">
@@ -79,7 +79,7 @@
       Developer<br>
       <b>Filip Z</b> <br>
       (https://github.com/Thebrefff)<br>
-      Search
+      Search.
     </td>
   </tr>
   <tr>
@@ -89,7 +89,7 @@
       Developer<br>
       <b>Filip G</b><br>
       (https://github.com/FilipGk)<br>
-      Pagination
+      Pagination.
     </td>
     <td></td>
   </tr>
