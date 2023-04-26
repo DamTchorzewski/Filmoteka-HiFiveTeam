@@ -31,12 +31,12 @@
 
 ## HiFiveTeam Co-Creators
 
-- Damian Tchorzewski \*Team Lead (https://github.com/damiantchorzewski):
-- Beniamin Brzezińśki \*Scrum Master (https://github.com/benbrzezinski):
-- Dorota Dudzik \*Developer (https://github.com/doradudzik):
-- Edyta Sowa \*Developer (https://github.com/EdytaSowa):
-- Filip Vukić \*Developer (https://github.com/FVuk):
-- Dagmara Sobczyk \*Developer (https://github.com/DagmaraSobczak):
-- Filip G \*Developer (https://github.com/FilipGk):
-- Filip Z \*Developer (https://github.com/Thebrefff):
-- Dawid D \*Developer (https://github.com/Ddemkowicz):
+- Damian Tchorzewski 👨‍💻Team Lead (https://github.com/damiantchorzewski):
+- Beniamin Brzezińśki 👨‍💻Scrum Master (https://github.com/benbrzezinski):
+- Dorota Dudzik 👩‍💻Developer (https://github.com/doradudzik):
+- Edyta Sowa 👩‍💻Developer (https://github.com/EdytaSowa):
+- Filip Vukić 👨‍💻Developer (https://github.com/FVuk):
+- Dagmara Sobczyk 👩‍💻Developer (https://github.com/DagmaraSobczak):
+- Filip G 👨‍💻Developer (https://github.com/FilipGk):
+- Filip Z 👨‍💻Developer (https://github.com/Thebrefff):
+- Dawid D 👨‍💻Developer (https://github.com/Ddemkowicz):
