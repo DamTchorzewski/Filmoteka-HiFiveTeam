@@ -1,4 +1,4 @@
-# :film_strip: Filmoteka :popcorn:
+# :film_strip: :popcorn: Filmoteka
 
 <table>
   <tr>
