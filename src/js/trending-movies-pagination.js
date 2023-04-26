@@ -1,6 +1,4 @@
 import Pagination from 'tui-pagination';
-import { setPagination } from './pagination';
-
 import refs from './refs';
 import Api from './api';
 import { renderMovieCard } from './render-movie-cards.js';
