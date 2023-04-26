@@ -17,14 +17,28 @@
       Team Lead<br>
       <b>Damian Tchorzewski</b><br>
       (https://github.com/damiantchorzewski)
+      -Zarządzanie projektem.
+      -Stworzenie szablonu strony.
+      -Code Reviwer.
+      -Paginacja/Wyszukiwarka.
+      -icons.svg
     </td>
     <td align="center">
     <a href="https://github.com/benbrzezinski">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
-      <b>Beniamin Brzezińśki</b><br> 
+      <b>Beniamin Brzezińśki</b><br>
       (https://github.com/benbrzezinski)
+      -Code Reviwer.
+      -Zarządzanie projektem.
+      -App.
+      -Api with feach
+      -LocalStorage.
+      -Dodawanie i usuwanie filmów.
+      -Styles global.
+
     </td>
+
   </tr>
   <tr>
     <td align="center">
@@ -33,6 +47,7 @@
       Developer<br>
       <b>Dorota Dudzik</b><br>
       (https://github.com/doradudzik)
+      -Card Film
     </td>
     <td align="center">
     <a href="https://github.com/EdytaSowa">
@@ -56,6 +71,8 @@
       Developer<br>
       <b>Dagmara Sobczyk</b><br>
       (https://github.com/DagmaraSobczak)
+      -Footer
+      -Trailer film
     </td>
   </tr>
   <tr>
