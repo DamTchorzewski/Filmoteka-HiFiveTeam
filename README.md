@@ -1,4 +1,4 @@
-# :film_projector: Filmoteka :film_strip:
+# :film_strip: Filmoteka :film_strip:
 
 <table>
   <tr>
