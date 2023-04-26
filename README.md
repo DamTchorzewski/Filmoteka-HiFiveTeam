@@ -17,7 +17,7 @@
       <b>Damian Tchorzewski</b> (https://github.com/damiantchorzewski)
     </td>
     <td align="center">
-      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+      <img src="src/images/team/BeniaminB.jpg" href="https://github.com/benbrzezinski" alt="avatar" width="100" style="border-radius: 50%"><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b> (https://github.com/benbrzezinski)
     </td>
