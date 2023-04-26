@@ -14,7 +14,7 @@
     <td align="center">
       <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Team Lead<br>
-      Damian Tchorzewski (https://github.com/damiantchorzewski)
+      <b>Damian Tchorzewski</b> (https://github.com/damiantchorzewski)
     </td>
     <td align="center">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
