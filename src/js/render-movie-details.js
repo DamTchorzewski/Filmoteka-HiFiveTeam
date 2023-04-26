@@ -1,5 +1,5 @@
 import refs from './refs';
-import noImg from '../images/moviesGallery/noImg.jpg';
+import noimg from '../images/movies-gallery/noimg.jpg';
 
 const renderMovieDetails = ({
   poster_path,
@@ -10,9 +10,10 @@ const renderMovieDetails = ({
   genres,
   overview,
 }) => {
+  const posterSize = window.devicePixelRatio > 1 ? 'original' : 'w500';
   const poster = poster_path
-    ? `https://image.tmdb.org/t/p/w500/${poster_path}`
-    : noImg;
+    ? `https://image.tmdb.org/t/p/${posterSize}/${poster_path}`
+    : noimg;
 
   const categories = genres.map(({ name }) => name).join(', ');
 

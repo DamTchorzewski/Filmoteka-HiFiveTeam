@@ -3,12 +3,12 @@ import { setPagination } from './pagination';
 
 import refs from './refs';
 import Api from './api';
-import { renderMovieCard } from './renderMovieCards.js';
+import { renderMovieCard } from './render-movie-cards.js';
 import Loader from './loader';
-import scrollTop from './scrollTop';
+import scrollTop from './scroll-top';
 
 const initTrendingMoviesPagination = async () => {
-  const setPagination = (totalItems) => {
+  const setPagination = totalItems => {
     const options = {
       totalItems,
       itemsPerPage: 20,

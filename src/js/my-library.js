@@ -1,8 +1,8 @@
 import refs from './refs';
 import Api from './api';
-import grandma from '../images/myLibrary/grandma.jpg';
-import noImg from '../images/moviesGallery/noImg.jpg';
-import Storage from './localStorage';
+import grandma from '../images/my-library/grandma.jpg';
+import noimg from '../images/movies-gallery/noimg.jpg';
+import Storage from './local-storage';
 
 const showWatched = async () => {
   try {
@@ -81,9 +81,10 @@ function renderMovieCard(movies) {
         poster_path,
         genres,
       }) => {
+        const posterSize = window.devicePixelRatio > 1 ? 'original' : 'w500';
         const moviePoster = poster_path
-          ? `https://image.tmdb.org/t/p/w500/${poster_path}`
-          : noImg;
+          ? `https://image.tmdb.org/t/p/${posterSize}/${poster_path}`
+          : noimg;
 
         const movieDate = release_date
           ? release_date.slice(0, 4)

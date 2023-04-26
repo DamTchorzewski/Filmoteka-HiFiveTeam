@@ -1,5 +1,5 @@
 import refs from './refs';
-import Storage from './localStorage';
+import Storage from './local-storage';
 
 const toggleMovieToWatched = e => {
   const id = e.currentTarget.dataset.id;

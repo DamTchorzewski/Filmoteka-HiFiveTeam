@@ -1,8 +1,8 @@
 import { Notify } from 'notiflix';
-import renderMovieDetails from './renderMovieDetails';
+import renderMovieDetails from './render-movie-details';
 import Api from './api';
 import refs from './refs';
-import Modal from './modalOpenClose';
+import Modal from './modal-open-close';
 import refresh from './refresh';
 
 const movieDetailsOnClick = async e => {
