@@ -76,10 +76,11 @@
   </tr>
   <tr>
     <td align="center">
+    <b>Filip G</b><br>
     <a href="https://github.com/FilipGk">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Filip G</b><br>
+      
       Pagination.
     </td>
     <td></td>
