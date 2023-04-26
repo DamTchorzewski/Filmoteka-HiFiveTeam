@@ -13,56 +13,56 @@
   <tr>
     <td align="center">
       <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Damian Tchorzewski<br>
-      Team Lead (https://github.com/damiantchorzewski)
+      Team Lead<br>
+      Damian Tchorzewski (https://github.com/damiantchorzewski)
     </td>
     <td align="center">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Beniamin Brzezińśki<br>
-      Scrum Master (https://github.com/benbrzezinski)
+      Scrum Master<br>
+      Beniamin Brzezińśki (https://github.com/benbrzezinski)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Dorota Dudzik<br>
-      Developer (https://github.com/doradudzik)
+      Developer<br>
+      Dorota Dudzik(https://github.com/doradudzik)
     </td>
     <td align="center">
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Edyta Sowa<br>
-      Developer (https://github.com/EdytaSowa)
+      Developer<br>
+      Edyta Sowa (https://github.com/EdytaSowa)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Filip Vukić<br>
-      Developer (https://github.com/FVuk)
+      Developer<br>
+      Filip Vukić (https://github.com/FVuk)
     </td>
     <td align="center">
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Dagmara Sobczyk<br>
-      Developer (https://github.com/DagmaraSobczak)
+      Developer<br>
+      Dagmara Sobczyk (https://github.com/DagmaraSobczak)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Filip G<br>
-      Developer (https://github.com/FilipGk)
+      Developer<br>
+      Filip G (https://github.com/FilipGk)
     </td>
     <td align="center">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Filip Z<br>
-      Developer (https://github.com/Thebrefff)
+      Developer<br>
+      Filip Z (https://github.com/Thebrefff)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Dawid D<br>
-      Developer (https://github.com/Ddemkowicz)
+      Developer <br>
+      Dawid D (https://github.com/Ddemkowicz)
     </td>
     <td></td>
   </tr>
