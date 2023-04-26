@@ -17,28 +17,15 @@
       Team Lead<br>
       <b>Damian Tchorzewski</b><br>
       (https://github.com/damiantchorzewski)
-      -Zarządzanie projektem.
-      -Stworzenie szablonu strony.
-      -Code Reviwer.
-      -Paginacja/Wyszukiwarka.
-      -icons.svg
+ Zarządzanie projektem, stworzenie szablonu strony, code reviwer, pagination, search, add icons.svg.
     </td>
     <td align="center">
     <a href="https://github.com/benbrzezinski">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b><br>
-      (https://github.com/benbrzezinski)
-      -Code Reviwer.
-      -Zarządzanie projektem.
-      -App.
-      -Api with feach
-      -LocalStorage.
-      -Dodawanie i usuwanie filmów.
-      -Styles global.
-
-    </td>
-
+      (https://github.com/benbrzezinski):Code Reviwer zarządzanie projektem, Api ,Api with feach, LocalStorage, function add and delate film, add styles global.
+      </td>
   </tr>
   <tr>
     <td align="center">
