@@ -9,14 +9,64 @@
 
 ## HiFiveTeam Co-Creators
 
-| <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%"> Damian Tchorzewski<br>Team Lead (https://github.com/damiantchorzewski) | <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"> Beniamin Brzezińśki<br>Scrum Master (https://github.com/benbrzezinski) |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"> Dorota Dudzik<br>Developer (https://github.com/doradudzik)             | <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"> Edyta Sowa<br>Developer (https://github.com/EdytaSowa)                    |
-| <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"> Filip Vukić<br>Developer (https://github.com/FVuk)                      | <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"> Dagmara Sobczyk<br>Developer (https://github.com/DagmaraSobczak)        |
-| <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"> Filip G<br>Developer (https://github.com/FilipGk)                       | <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"> Filip Z<br>Developer (https://github.com/Thebrefff)                       |
-| <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"> Dawid D<br>Developer (https://github.com/Ddemkowicz)                    |                                                                                                                                                                     |
-
-W tym rozwiązaniu, każdy obraz jest umieszczony w osobnej
+<table>
+  <tr>
+    <td align="center">
+      <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Damian Tchorzewski<br>
+      Team Lead (https://github.com/damiantchorzewski)
+    </td>
+    <td align="center">
+      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Beniamin Brzezińśki<br>
+      Scrum Master (https://github.com/benbrzezinski)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Dorota Dudzik<br>
+      Developer (https://github.com/doradudzik)
+    </td>
+    <td align="center">
+      <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Edyta Sowa<br>
+      Developer (https://github.com/EdytaSowa)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Filip Vukić<br>
+      Developer (https://github.com/FVuk)
+    </td>
+    <td align="center">
+      <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Dagmara Sobczyk<br>
+      Developer (https://github.com/DagmaraSobczak)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Filip G<br>
+      Developer (https://github.com/FilipGk)
+    </td>
+    <td align="center">
+      <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Filip Z<br>
+      Developer (https://github.com/Thebrefff)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Dawid D<br>
+      Developer (https://github.com/Ddemkowicz)
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 ## :hammer_and_wrench: Languages and Tools :
 
