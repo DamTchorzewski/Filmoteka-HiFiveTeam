@@ -52,10 +52,10 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Developer<br>
-      <b>Filip G</b> <br>
-      (https://github.com/FilipGk)
+      <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Developer <br>
+      <b>Dawid Demkowicz</b> <br>
+      (https://github.com/Ddemkowicz)
     </td>
     <td align="center">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
@@ -66,10 +66,10 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
-      Developer <br>
-      <b>Dawid Demkowicz</b> <br>
-      (https://github.com/Ddemkowicz)
+      <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      Developer<br>
+      <b>Filip G</b> <br>
+      (https://github.com/FilipGk)
     </td>
     <td></td>
   </tr>
