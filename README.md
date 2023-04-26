@@ -16,7 +16,6 @@
       <img src="src/images/team/DamianT.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Team Lead<br>
       <b>Damian Tchorzewski</b><br>
-      (https://github.com/damiantchorzewski)<br>
  Project management, website template creation (starter files), code review, pagination, search, add icons.svg.
     </td>
     <td align="center">
@@ -24,7 +23,6 @@
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b><br>
-      (https://github.com/benbrzezinski)<br>
       Code Reviwer, planning meeting, Api with feach, LocalStorage, function add and delate film, add styles global, Trello.
       </td>
   </tr>
@@ -34,7 +32,6 @@
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dorota Dudzik</b><br>
-      (https://github.com/doradudzik)<br>
       Render cards films, Cards films, app, style, animations. 
     </td>
     <td align="center">
@@ -42,7 +39,6 @@
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Edyta Sowa</b><br>
-      (https://github.com/EdytaSowa)<br>
       Header home and library, search
     </td>
   </tr>
@@ -52,7 +48,6 @@
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip Vukić</b><br>
-      (https://github.com/FVuk)<br>
       Construction and implementation of the movie modal window and the team modal window.
     </td>
     <td align="center">
@@ -60,7 +55,6 @@
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dagmara Sobczyk</b><br>
-      (https://github.com/DagmaraSobczak)<br>
       Footer home and library, implementation of the movie trailer display.
     </td>
   </tr>
@@ -70,7 +64,6 @@
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer <br>
       <b>Dawid Demkowicz</b><br>
-      (https://github.com/Ddemkowicz)<br>
       "Watched" and "Queue" buttons create lists of movies added to a given group.
     </td>
     <td align="center">
@@ -78,7 +71,6 @@
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip Z</b> <br>
-      (https://github.com/Thebrefff)<br>
       Search.
     </td>
   </tr>
@@ -88,7 +80,6 @@
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip G</b><br>
-      (https://github.com/FilipGk)<br>
       Pagination.
     </td>
     <td></td>
