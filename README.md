@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">📽️🎞️ Filmoteka 🎟️🍿</h1>
+<h1 style="align-item: center;">📽️🎞️ Filmoteka 🎟️🍿</h1>
 
 <table>
   <tr>
