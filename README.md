@@ -34,15 +34,16 @@
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dorota Dudzik</b><br>
-      (https://github.com/doradudzik)
-      -Card Film
+      (https://github.com/doradudzik)<br>
+      Render cards films, Cards films, app, style, animations 
     </td>
     <td align="center">
     <a href="https://github.com/EdytaSowa">
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Edyta Sowa</b><br>
-      (https://github.com/EdytaSowa)
+      (https://github.com/EdytaSowa)<br>
+      Header home and library, search
     </td>
   </tr>
   <tr>
@@ -51,7 +52,8 @@
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip Vukić</b><br>
-      (https://github.com/FVuk)
+      (https://github.com/FVuk)<br>
+      Construction and implementation of the movie modal window and the team modal window.
     </td>
     <td align="center">
     <a href="https://github.com/DagmaraSobczak">
@@ -59,8 +61,7 @@
       Developer<br>
       <b>Dagmara Sobczyk</b><br>
       (https://github.com/DagmaraSobczak)
-      -Footer
-      -Trailer film
+      Footer home and library, implementation of the movie trailer display.
     </td>
   </tr>
   <tr>
@@ -68,15 +69,17 @@
     <a href="https://github.com/Ddemkowicz">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer <br>
-      <b>Dawid Demkowicz</b> <br>
-      (https://github.com/Ddemkowicz)
+      <b>Dawid Demkowicz</b><br>
+      (https://github.com/Ddemkowicz)<br>
+      "Watched" and "Queue" buttons create lists of movies added to a given group.
     </td>
     <td align="center">
     <a href="https://github.com/Thebrefff">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip Z</b> <br>
-      (https://github.com/Thebrefff)
+      (https://github.com/Thebrefff)<br>
+      Search
     </td>
   </tr>
   <tr>
@@ -84,8 +87,9 @@
     <a href="https://github.com/FilipGk">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Filip G</b> <br>
-      (https://github.com/FilipGk)
+      <b>Filip G</b><br>
+      (https://github.com/FilipGk)<br>
+      Pagination
     </td>
     <td></td>
   </tr>
