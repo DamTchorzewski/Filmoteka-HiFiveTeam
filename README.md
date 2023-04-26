@@ -9,41 +9,62 @@
 
 ## HiFiveTeam Co-Creators
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%; margin-bottom: 5px;">
-        <a href="https://github.com/damiantchorzewski" style="text-align: center;">Damian Tchorzewski</a>
-        <p style="text-align: center;">Team Lead</p>
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%; margin-bottom: 5px;">
-        <a href="https://github.com/benbrzezinski" style="text-align: center;">Beniamin Brzeziński</a>
-        <p style="text-align: center;">Scrum Master</p>
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%; margin-bottom: 5px;">
-        <a href="https://github.com/doradudzik" style="text-align: center;">Dorota Dudzik</a>
-        <p style="text-align: center;">Developer</p>
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%; margin-bottom: 5px;">
-        <a href="https://github.com/EdytaSowa" style="text-align: center;">Edyta Sowa</a>
-        <p style="text-align: center;">Developer</p>
-    </div>
+<div style="display:flex; flex-wrap: wrap;">
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Damian Tchorzewski <br>
+    Team Lead <br>
+    (https://github.com/damiantchorzewski)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Beniamin Brzezińśki <br>
+    Scrum Master <br>
+    (https://github.com/benbrzezinski)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Dorota Dudzik <br>
+    Developer <br>
+    (https://github.com/doradudzik)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Edyta Sowa <br>
+    Developer <br>
+    (https://github.com/EdytaSowa)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Filip Vukić <br>
+    Developer <br>
+    (https://github.com/FVuk)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Dagmara Sobczyk <br>
+    Developer <br>
+    (https://github.com/DagmaraSobczak)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Filip G <br>
+    Developer <br>
+    (https://github.com/FilipGk)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Filip Z <br>
+    Developer <br>
+    (https://github.com/Thebrefff)
+  </div>
+  <div style="flex: 50%; padding: 5px;">
+    <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%">
+    Dawid D <br>
+    Developer <br>
+    (https://github.com/Ddemkowicz)
+  </div>
 </div>
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%; margin-bottom: 5px;">
-        <a href="https://github.com/FVuk" style="text-align: center;">Filip Vukić</a>
-        <p style="text-align: center;">Developer</p>
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%; margin-bottom: 5px;">
-        <a href="https://github.com/DagmaraSobczak" style="text-align: center;">Dagmara Sobczyk</a>
-        <p style="text-align: center;">Developer</p>
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
-        <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50
 
 ## :hammer_and_wrench: Languages and Tools :
 
