@@ -16,7 +16,7 @@
       <img src="src/images/team/DamianT.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Team Lead<br>
       <b>Damian Tchorzewski</b><br>
-      (https://github.com/damiantchorzewski)
+      (https://github.com/damiantchorzewski)<br>
  Zarządzanie projektem, stworzenie szablonu strony, code reviwer, pagination, search, add icons.svg.
     </td>
     <td align="center">
@@ -24,7 +24,8 @@
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b><br>
-      (https://github.com/benbrzezinski):Code Reviwer zarządzanie projektem, Api ,Api with feach, LocalStorage, function add and delate film, add styles global.
+      (https://github.com/benbrzezinski)<br>
+      Code Reviwer zarządzanie projektem, Api ,Api with feach, LocalStorage, function add and delate film, add styles global.
       </td>
   </tr>
   <tr>
