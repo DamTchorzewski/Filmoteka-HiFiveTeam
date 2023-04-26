@@ -17,7 +17,7 @@
       Team Lead<br>
       <b>Damian Tchorzewski</b><br>
       (https://github.com/damiantchorzewski)<br>
- Zarządzanie projektem, stworzenie szablonu strony, code reviwer, pagination, search, add icons.svg.
+ Project management, website template creation (starter files), code review, pagination, search, add icons.svg.
     </td>
     <td align="center">
     <a href="https://github.com/benbrzezinski">
