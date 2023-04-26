@@ -18,20 +18,23 @@
       <b>Damian Tchorzewski</b> (https://github.com/damiantchorzewski)
     </td>
     <td align="center">
-      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/benbrzezinski">
+      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b> (https://github.com/benbrzezinski)
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/doradudzik">
+      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dorota Dudzik</b><br>
       (https://github.com/doradudzik)
     </td>
     <td align="center">
-      <img src="src/images/team/EdytaS.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/EdytaSowa">
+      <img src="src/images/team/EdytaS.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Edyta Sowa</b><br>
       (https://github.com/EdytaSowa)
@@ -39,13 +42,15 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/FilipV.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/FVuk">
+      <img src="src/images/team/FilipV.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip Vukić</b><br>
       (https://github.com/FVuk)
     </td>
     <td align="center">
-      <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/DagmaraSobczak">
+      <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dagmara Sobczyk</b><br>
       (https://github.com/DagmaraSobczak)
@@ -53,13 +58,15 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/DawidD.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/Ddemkowicz">
+      <img src="src/images/team/DawidD.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer <br>
       <b>Dawid Demkowicz</b> <br>
       (https://github.com/Ddemkowicz)
     </td>
     <td align="center">
-      <img src="src/images/team/FilipZ.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/Thebrefff">
+      <img src="src/images/team/FilipZ.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip Z</b> <br>
       (https://github.com/Thebrefff)
@@ -67,7 +74,8 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/FilipG.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
+    <a href="https://github.com/FilipGk">
+      <img src="src/images/team/FilipG.jpg" alt="avatar" width="100" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Filip G</b> <br>
       (https://github.com/FilipGk)
