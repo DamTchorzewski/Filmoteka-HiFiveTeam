@@ -93,7 +93,6 @@ function renderMovieCard(movies) {
           : 'Unknown year';
         const movieName = title ? title : original_title;
 
-        // Wyświetlane są tylko dwa pierwsze gatunki filmowe
         let matchedGenres = genres.map(genre => genre.name);
         matchedGenres =
           matchedGenres.length > 0

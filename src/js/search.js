@@ -1,4 +1,3 @@
-import Pagination from 'tui-pagination';
 import { setPagination } from './pagination';
 import refs from './refs';
 import Api from './api';

@@ -1,18 +1,16 @@
-// UTILS SCSS
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/backdrop';
 @import './utils/active-btn';
-// BASE SCSS
+
 @import './base/normalize';
 @import './base/global';
 @import './base/body';
-// COMPONENTS SCSS
+
 @import './components/header';
 @import './components/header-library';
 @import './components/gallery';
 @import './components/footer';
-//
 @import './components/pagination';
 @import './components/form';
 @import './components/loader';

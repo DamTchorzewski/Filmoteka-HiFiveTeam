@@ -25,32 +25,31 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// Font Colors
 $colorTextMain: #000000;
 $colorTextSec: #ffffff;
 $colorTextThird: #8c8c8c;
 $colorTextFooter: #545454;
-// Accent Colors
+
 $colorAccentMain: #ff6b08;
 $colorAccentSec: #ff6b01;
 $colorAccentThird: #ff001b;
-// Background Colors
+
 $colorBgMain: #ffffff;
 $colorBgSec: #f7f7f7;
-// Font Families
+
 $fontFamily: 'Roboto', sans-serif;
 $fontWeight: 500;
-// Font Sizes
+
 $fontSizeMain: 12px;
 $fontSizeSec: 20px;
 $fontSizeThird: 14px;
 $fontSizeFourth: 30px;
-// Border Colors and sizes
+
 $borderRadius: 5px;
-// Transitions and timings
+
 $transitionDuration: 250ms;
 $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
-// Device breakpoints
+
 $mobile: 480px;
 $tablet: 768px;
 $laptop: 1280px;

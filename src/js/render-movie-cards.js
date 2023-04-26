@@ -36,7 +36,6 @@ export function renderMovieCard(movies) {
           : 'Unknown year';
         const movieName = title ? title : name;
 
-        // Wyszukiwanie gatunku filmowego po id:
         let matchedGenres = genre_ids
           .map(id => {
             const genre = movieGenres.find(g => g.id === id);
@@ -44,7 +43,6 @@ export function renderMovieCard(movies) {
           })
           .filter(Boolean);
 
-        // Wyświetlane są tylko dwa pierwsze gatunki filmowe
         matchedGenres =
           matchedGenres.length > 0
             ? matchedGenres.length > 2

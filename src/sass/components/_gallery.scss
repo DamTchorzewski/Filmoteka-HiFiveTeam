@@ -15,7 +15,6 @@
   }
 
   &__container {
-    //style kontenera galerii "<ul></ul>"
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,7 +40,6 @@
   }
 }
 .movie-container__card {
-  //style pojedynczej karty filmu
   cursor: pointer;
   overflow: hidden;
   border-radius: var(--border-radius);
@@ -92,7 +90,6 @@
   }
 }
 .poster {
-  //style plakatu filmu
   border-radius: var(--border-radius);
   overflow: hidden;
   width: 280px;
@@ -116,7 +113,6 @@
 }
 
 .movieInfo {
-  //style inf. o filmie: tytuł/gatunek filmowy/rok premiery
   padding: 10px;
   max-width: 350px;
 
@@ -145,7 +141,6 @@
   }
 }
 
-//Animacja- SHINE
 @-webkit-keyframes shine {
   100% {
     left: 125%;
