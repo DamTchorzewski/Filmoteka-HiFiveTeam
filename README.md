@@ -19,20 +19,20 @@
     <td align="center">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Scrum Master<br>
-      Beniamin Brzezińśki (https://github.com/benbrzezinski)
+      <b>Beniamin Brzezińśki</b> (https://github.com/benbrzezinski)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Dorota Dudzik<br>
+      <b>Dorota Dudzik</b><br>
       (https://github.com/doradudzik)
     </td>
     <td align="center">
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Edyta Sowa<br>
+      <b>Edyta Sowa</b><br>
       (https://github.com/EdytaSowa)
     </td>
   </tr>
@@ -40,13 +40,13 @@
     <td align="center">
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Filip Vukić<br>
+      <b>Filip Vukić</b><br>
       (https://github.com/FVuk)
     </td>
     <td align="center">
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Dagmara Sobczyk<br>
+      <b>Dagmara Sobczyk</b><br>
       (https://github.com/DagmaraSobczak)
     </td>
   </tr>
@@ -54,13 +54,13 @@
     <td align="center">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Filip G <br>
+      <b>Filip G</b> <br>
       (https://github.com/FilipGk)
     </td>
     <td align="center">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Filip Z <br>
+      <b>Filip Z</b> <br>
       (https://github.com/Thebrefff)
     </td>
   </tr>
@@ -68,7 +68,7 @@
     <td align="center">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer <br>
-      Dawid D <br>
+      <b>Dawid D</b> <br>
       (https://github.com/Ddemkowicz)
     </td>
     <td></td>
