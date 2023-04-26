@@ -12,25 +12,25 @@
 <table>
   <tr>
     <td align="center">
-      <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/DamianT.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Team Lead<br>
       <b>Damian Tchorzewski</b> (https://github.com/damiantchorzewski)
     </td>
     <td align="center">
-      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b> (https://github.com/benbrzezinski)
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer<br>
       <b>Dorota Dudzik</b><br>
       (https://github.com/doradudzik)
     </td>
     <td align="center">
-      <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/EdytaS.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer<br>
       <b>Edyta Sowa</b><br>
       (https://github.com/EdytaSowa)
