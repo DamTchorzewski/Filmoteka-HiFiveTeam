@@ -26,43 +26,50 @@
     <td align="center">
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Dorota Dudzik(https://github.com/doradudzik)
+      Dorota Dudzik
+      (https://github.com/doradudzik)
     </td>
     <td align="center">
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Edyta Sowa (https://github.com/EdytaSowa)
+      Edyta Sowa
+      (https://github.com/EdytaSowa)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Filip Vukić (https://github.com/FVuk)
+      Filip Vukić
+      (https://github.com/FVuk)
     </td>
     <td align="center">
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Dagmara Sobczyk (https://github.com/DagmaraSobczak)
+      Dagmara Sobczyk
+      (https://github.com/DagmaraSobczak)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Filip G (https://github.com/FilipGk)
+      Filip G
+      (https://github.com/FilipGk)
     </td>
     <td align="center">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer<br>
-      Filip Z (https://github.com/Thebrefff)
+      Filip Z
+      (https://github.com/Thebrefff)
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
       Developer <br>
-      Dawid D (https://github.com/Ddemkowicz)
+      Dawid D
+      (https://github.com/Ddemkowicz)
     </td>
     <td></td>
   </tr>
