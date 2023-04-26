@@ -20,7 +20,7 @@
     </td>
     <td align="center">
     <a href="https://github.com/benbrzezinski">
-      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50%" style="border-radius: 50%"></a><br>
+      <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b><br> 
       (https://github.com/benbrzezinski)
@@ -29,7 +29,7 @@
   <tr>
     <td align="center">
     <a href="https://github.com/doradudzik">
-      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50%" style="border-radius: 50%"></a><br>
+      <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
       <b>Dorota Dudzik</b><br>
       (https://github.com/doradudzik)
