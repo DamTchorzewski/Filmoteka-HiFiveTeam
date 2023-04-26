@@ -25,7 +25,7 @@
       Scrum Master<br>
       <b>Beniamin Brzezińśki</b><br>
       (https://github.com/benbrzezinski)<br>
-      Code Reviwer zarządzanie projektem, Api ,Api with feach, LocalStorage, function add and delate film, add styles global.
+      Code Reviwer, planning meeting, Api with feach, LocalStorage, function add and delate film, add styles global, Trello
       </td>
   </tr>
   <tr>
