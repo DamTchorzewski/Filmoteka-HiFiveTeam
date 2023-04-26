@@ -9,62 +9,14 @@
 
 ## HiFiveTeam Co-Creators
 
-<div style="display:flex; flex-wrap: wrap;">
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Damian Tchorzewski <br>
-    Team Lead <br>
-    (https://github.com/damiantchorzewski)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Beniamin Brzezińśki <br>
-    Scrum Master <br>
-    (https://github.com/benbrzezinski)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Dorota Dudzik <br>
-    Developer <br>
-    (https://github.com/doradudzik)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Edyta Sowa <br>
-    Developer <br>
-    (https://github.com/EdytaSowa)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Filip Vukić <br>
-    Developer <br>
-    (https://github.com/FVuk)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Dagmara Sobczyk <br>
-    Developer <br>
-    (https://github.com/DagmaraSobczak)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Filip G <br>
-    Developer <br>
-    (https://github.com/FilipGk)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Filip Z <br>
-    Developer <br>
-    (https://github.com/Thebrefff)
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%">
-    Dawid D <br>
-    Developer <br>
-    (https://github.com/Ddemkowicz)
-  </div>
-</div>
+| <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%"> Damian Tchorzewski<br>Team Lead (https://github.com/damiantchorzewski) | <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%"> Beniamin Brzezińśki<br>Scrum Master (https://github.com/benbrzezinski) |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%"> Dorota Dudzik<br>Developer (https://github.com/doradudzik)             | <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%"> Edyta Sowa<br>Developer (https://github.com/EdytaSowa)                    |
+| <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"> Filip Vukić<br>Developer (https://github.com/FVuk)                      | <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"> Dagmara Sobczyk<br>Developer (https://github.com/DagmaraSobczak)        |
+| <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"> Filip G<br>Developer (https://github.com/FilipGk)                       | <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"> Filip Z<br>Developer (https://github.com/Thebrefff)                       |
+| <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"> Dawid D<br>Developer (https://github.com/Ddemkowicz)                    |                                                                                                                                                                     |
+
+W tym rozwiązaniu, każdy obraz jest umieszczony w osobnej
 
 ## :hammer_and_wrench: Languages and Tools :
 
