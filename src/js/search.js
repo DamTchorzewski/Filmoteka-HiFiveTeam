@@ -2,9 +2,9 @@ import Pagination from 'tui-pagination';
 import { setPagination } from './pagination';
 import refs from './refs';
 import Api from './api';
-import { renderMovieCard } from './renderMovieCards.js';
+import { renderMovieCard } from './render-movie-cards.js';
 import Loader from './loader';
-import scrollTop from './scrollTop';
+import scrollTop from './scroll-top';
 
 let paginationSearch;
 
@@ -38,10 +38,7 @@ const searchMovie = async (e, currentPage = 1) => {
       scrollTop();
 
       if (!paginationSearch) {
-        paginationSearch = setPagination(
-          data.total_results,
-          refs.pagination
-        );
+        paginationSearch = setPagination(data.total_results, refs.pagination);
 
         paginationSearch.on('beforeMove', async ({ page }) => {
           refs.moviesGallery.innerHTML = '';
@@ -74,4 +71,4 @@ const searchMovie = async (e, currentPage = 1) => {
   }
 };
 
-refs.searchBtn.addEventListener('click', (e) => searchMovie(e, 1));
+refs.searchBtn.addEventListener('click', e => searchMovie(e, 1));

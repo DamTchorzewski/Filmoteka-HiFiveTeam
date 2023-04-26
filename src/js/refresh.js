@@ -1,5 +1,5 @@
 import refs from './refs';
-import Storage from './localStorage';
+import Storage from './local-storage';
 
 const refresh = id => {
   if (Storage.watched.includes(id)) {

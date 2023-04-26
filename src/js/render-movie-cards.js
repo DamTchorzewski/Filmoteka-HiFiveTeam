@@ -1,15 +1,16 @@
 import Api from './api.js';
 import { movieGenres } from './genres.js';
 import refs from './refs.js';
-import noImg from '../images/moviesGallery/noImg.jpg';
+import noimg from '../images/movies-gallery/noimg.jpg';
 
-Api.getTrendingMovies()
-  .then(data => {
+(async () => {
+  try {
+    const data = await Api.getTrendingMovies();
     renderMovieCard(data.results);
-  })
-  .catch(error => {
+  } catch (error) {
     console.log(error);
-  });
+  }
+})();
 
 export function renderMovieCard(movies) {
   const markup = movies
@@ -23,9 +24,10 @@ export function renderMovieCard(movies) {
         poster_path,
         genre_ids,
       }) => {
+        const posterSize = window.devicePixelRatio > 1 ? 'original' : 'w500';
         const moviePoster = poster_path
-          ? `https://image.tmdb.org/t/p/w500/${poster_path}`
-          : noImg;
+          ? `https://image.tmdb.org/t/p/${posterSize}/${poster_path}`
+          : noimg;
 
         const movieDate = release_date
           ? release_date.slice(0, 4)
