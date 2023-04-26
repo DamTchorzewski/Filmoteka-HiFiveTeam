@@ -80,7 +80,6 @@
     <a href="https://github.com/FilipGk">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      
       Pagination.
     </td>
     <td></td>
