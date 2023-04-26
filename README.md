@@ -67,7 +67,7 @@
       "Watched" and "Queue" buttons create lists of movies added to a given group.
     </td>
     <td align="center">
-    <b>Filip Z</b> <br>
+    <b>Filip Zieliński</b> <br>
     <a href="https://github.com/Thebrefff">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
@@ -76,7 +76,7 @@
   </tr>
   <tr>
     <td align="center">
-    <b>Filip G</b><br>
+    <b>Filip Grzelak</b><br>
     <a href="https://github.com/FilipGk">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
