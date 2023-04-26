@@ -38,13 +38,13 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/FilipV.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer<br>
       <b>Filip Vukić</b><br>
       (https://github.com/FVuk)
     </td>
     <td align="center">
-      <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer<br>
       <b>Dagmara Sobczyk</b><br>
       (https://github.com/DagmaraSobczak)
@@ -52,13 +52,13 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/DawidD.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer <br>
       <b>Dawid Demkowicz</b> <br>
       (https://github.com/Ddemkowicz)
     </td>
     <td align="center">
-      <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/FilipZ.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer<br>
       <b>Filip Z</b> <br>
       (https://github.com/Thebrefff)
@@ -66,7 +66,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%"><br>
+      <img src="src/images/team/FilipG.jpg" alt="avatar" width="100" style="border-radius: 50%"><br>
       Developer<br>
       <b>Filip G</b> <br>
       (https://github.com/FilipGk)
