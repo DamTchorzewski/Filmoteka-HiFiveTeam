@@ -11,20 +11,28 @@
 
 <img src="src/images/team/DamianT.jpg" alt="avatar" width="50" style="border-radius: 50%">Damian
 Tchorzewski Team Lead (https://github.com/damiantchorzewski):
+
 <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="50" style="border-radius: 50%">Beniamin
 Brzezińśki Scrum Master (https://github.com/benbrzezinski):
+
 <img src="src/images/team/DorotaD.jpg" alt="avatar" width="50" style="border-radius: 50%">Dorota
 Dudzik Developer (https://github.com/doradudzik):
+
 <img src="src/images/team/EdytaS.jpg" alt="avatar" width="50" style="border-radius: 50%">Edyta
 Sowa Developer (https://github.com/EdytaSowa):
+
 <img src="src/images/team/FilipV.jpg" alt="avatar" width="50" style="border-radius: 50%">Filip
 Vukić Developer (https://github.com/FVuk):
+
 <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="50" style="border-radius: 50%">Dagmara
 Sobczyk Developer (https://github.com/DagmaraSobczak):
+
 <img src="src/images/team/FilipG.jpg" alt="avatar" width="50" style="border-radius: 50%">Filip
 G Developer (https://github.com/FilipGk):
+
 <img src="src/images/team/FilipZ.jpg" alt="avatar" width="50" style="border-radius: 50%">Filip
 Z Developer (https://github.com/Thebrefff):
+
 <img src="src/images/team/DawidD.jpg" alt="avatar" width="50" style="border-radius: 50%">Dawid
 D Developer (https://github.com/Ddemkowicz):
 
