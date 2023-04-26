@@ -12,65 +12,66 @@
 <table>
   <tr>
     <td align="center">
+     <b>Damian Tchorzewski</b><br>
     <a href="https://github.com/damiantchorzewski">
       <img src="src/images/team/DamianT.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Team Lead<br>
-      <b>Damian Tchorzewski</b><br>
  Project management, website template creation (starter files), code review, pagination, search, add icons.svg.
     </td>
     <td align="center">
+    <b>Beniamin Brzezińśki</b><br>
     <a href="https://github.com/benbrzezinski">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
-      <b>Beniamin Brzezińśki</b><br>
       Code Reviwer, planning meeting, Api with feach, LocalStorage, function add and delate film, add styles global, Trello.
       </td>
   </tr>
   <tr>
     <td align="center">
+     <b>Dorota Dudzik</b><br>
     <a href="https://github.com/doradudzik">
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Dorota Dudzik</b><br>
+     
       Render cards films, Cards films, app, style, animations. 
     </td>
     <td align="center">
+    <b>Edyta Sowa</b><br>
     <a href="https://github.com/EdytaSowa">
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Edyta Sowa</b><br>
       Header home and library, search
     </td>
   </tr>
   <tr>
     <td align="center">
+    <b>Filip Vukić</b><br>
     <a href="https://github.com/FVuk">
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Filip Vukić</b><br>
       Construction and implementation of the movie modal window and the team modal window.
     </td>
     <td align="center">
+    <b>Dagmara Sobczyk</b><br>
     <a href="https://github.com/DagmaraSobczak">
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Dagmara Sobczyk</b><br>
       Footer home and library, implementation of the movie trailer display.
     </td>
   </tr>
   <tr>
     <td align="center">
+    <b>Dawid Demkowicz</b><br>
     <a href="https://github.com/Ddemkowicz">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer <br>
-      <b>Dawid Demkowicz</b><br>
       "Watched" and "Queue" buttons create lists of movies added to a given group.
     </td>
     <td align="center">
+    <b>Filip Z</b> <br>
     <a href="https://github.com/Thebrefff">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      <b>Filip Z</b> <br>
       Search.
     </td>
   </tr>
