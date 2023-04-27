@@ -1,14 +1,18 @@
 import Api from './api.js';
 import { movieGenres } from './genres.js';
 import refs from './refs.js';
-import noimg from '../images/movies-gallery/noimg.jpg';
+import noImg from '../images/movies-gallery/noimg.jpg';
+import Loader from './loader.js';
 
 (async () => {
   try {
+    Loader.show(refs.loader);
     const data = await Api.getTrendingMovies();
+
+    Loader.hide(refs.loader);
     renderMovieCard(data.results);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.error(err);
   }
 })();
 
@@ -27,7 +31,7 @@ export function renderMovieCard(movies) {
         const posterSize = window.devicePixelRatio > 1 ? 'original' : 'w500';
         const moviePoster = poster_path
           ? `https://image.tmdb.org/t/p/${posterSize}/${poster_path}`
-          : noimg;
+          : noImg;
 
         const movieDate = release_date
           ? release_date.slice(0, 4)
@@ -62,5 +66,6 @@ export function renderMovieCard(movies) {
       }
     )
     .join('');
+
   refs.moviesGallery.insertAdjacentHTML('beforeend', markup);
 }

@@ -7,8 +7,6 @@ import scrollTop from './scroll-top';
 
 let paginationSearch;
 
-refs.errorMessage.style.display = 'none';
-
 const searchMovie = async (e, currentPage = 1) => {
   e.preventDefault();
 
@@ -49,8 +47,8 @@ const searchMovie = async (e, currentPage = 1) => {
             const data = await Api.getMoviesByQuery(searchValue, page);
             renderMovieCard(data.results);
             scrollTop();
-          } catch (error) {
-            console.error(error);
+          } catch (err) {
+            console.error(err);
           } finally {
             Loader.hide(refs.loader);
             refs.pagination.style.display = 'block';
@@ -61,8 +59,8 @@ const searchMovie = async (e, currentPage = 1) => {
         paginationSearch.reset(data.total_results);
       }
     }
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error(err);
     refs.errorMessage.style.display = 'block';
     refs.pagination.style.display = 'none';
   } finally {
@@ -70,4 +68,4 @@ const searchMovie = async (e, currentPage = 1) => {
   }
 };
 
-refs.searchBtn.addEventListener('click', e => searchMovie(e, 1));
+refs.searchBtn.addEventListener('click', e => searchMovie(e));

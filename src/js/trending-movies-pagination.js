@@ -33,8 +33,8 @@ const initTrendingMoviesPagination = async () => {
           renderMovieCard(data.results);
           scrollTop();
         }, 500);
-      } catch (error) {
-        console.error(error);
+      } catch (err) {
+        console.error(err);
       }
     });
 
@@ -44,8 +44,8 @@ const initTrendingMoviesPagination = async () => {
   try {
     const data = await Api.getTrendingMovies();
     const pagination = setPagination(data.total_pages);
-  } catch (error) {
-    console.error(error.stack);
+  } catch (err) {
+    console.error(err.stack);
   }
 };
 

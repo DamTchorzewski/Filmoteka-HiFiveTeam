@@ -1,14 +1,18 @@
 import refs from './refs';
 import Api from './api';
 import grandma from '../images/my-library/grandma.jpg';
-import noimg from '../images/movies-gallery/noimg.jpg';
+import noImg from '../images/movies-gallery/noimg.jpg';
 import Storage from './local-storage';
+import Loader from './loader';
 
 const showWatched = async () => {
   try {
+    Loader.show(refs.loader);
+
     const moviesId = Storage.watched;
     const movies = await Api.getMoviesById(moviesId);
 
+    Loader.hide(refs.loader);
     renderMovieCard(movies);
     refs.libraryGallery.style.justifyContent = 'flex-start';
 
@@ -26,14 +30,17 @@ const showWatched = async () => {
   }
 };
 
-refs.btnWatched.addEventListener('click', showWatched);
 showWatched();
+refs.btnWatched.addEventListener('click', showWatched);
 
 const showQueue = async () => {
   try {
+    Loader.show(refs.loader);
+
     const moviesId = Storage.queue;
     const movies = await Api.getMoviesById(moviesId);
 
+    Loader.hide(refs.loader);
     renderMovieCard(movies);
     refs.libraryGallery.style.justifyContent = 'flex-start';
 
@@ -84,7 +91,7 @@ function renderMovieCard(movies) {
         const posterSize = window.devicePixelRatio > 1 ? 'original' : 'w500';
         const moviePoster = poster_path
           ? `https://image.tmdb.org/t/p/${posterSize}/${poster_path}`
-          : noimg;
+          : noImg;
 
         const movieDate = release_date
           ? release_date.slice(0, 4)
