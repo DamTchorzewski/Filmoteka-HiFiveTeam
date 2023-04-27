@@ -16,14 +16,24 @@
     <a href="https://github.com/damiantchorzewski">
       <img src="src/images/team/DamianT.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Team Lead<br>
- Project management, website template creation (starter files), code review, pagination, search, add icons.svg.
+ Project management, including coordinating and delegating tasks to team members.
+Creating the website template starter files for the project.
+Code review to ensure code quality and consistency.
+Implementation of pagination and search functionalities.
+Adding icons.svg to enhance the user interface.
     </td>
     <td align="center">
     <b>Beniamin Brzezińśki</b><br>
     <a href="https://github.com/benbrzezinski">
       <img src="src/images/team/BeniaminB.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Scrum Master<br>
-      Code Reviwer, planning meeting, Api with feach, LocalStorage, function add and delate film, add styles global, Trello.
+      Code review to ensure code quality and consistency.
+Planning and leading team meetings to keep the project on track.
+Implementation of Api with feach to fetch data from external sources.
+Use of LocalStorage to store user data.
+Functionality to add and delete movies.
+Styling the website globally.
+Use of Trello for project management.
       </td>
   </tr>
   <tr>
@@ -32,14 +42,18 @@
     <a href="https://github.com/doradudzik">
       <img src="src/images/team/DorotaD.jpg" alt="avatar" width="25%" style="border-radius:50%"></a><br>
       Developer<br>
-      Render cards films, Cards films, app, style, animations. 
+     Rendering of movie cards for the website.
+Implementation of the movie cards functionality.
+Developing the overall application and styles.
+Adding animations to enhance the user experience.
     </td>
     <td align="center">
     <b>Edyta Sowa</b><br>
     <a href="https://github.com/EdytaSowa">
       <img src="src/images/team/EdytaS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      Header home and library, search
+      Developing the header for the home and library pages.
+Adding search functionality to the website.
     </td>
   </tr>
   <tr>
@@ -48,14 +62,15 @@
     <a href="https://github.com/FVuk">
       <img src="src/images/team/FilipV.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      Construction and implementation of the movie modal window and the team modal window.
+      Developing and implementing the modal window for movies and teams.
     </td>
     <td align="center">
     <b>Dagmara Sobczyk</b><br>
     <a href="https://github.com/DagmaraSobczak">
       <img src="src/images/team/DagmaraS.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      Footer home and library, implementation of the movie trailer display.
+     Developing the footer for the home and library pages.
+Implementing the display of movie trailers.
     </td>
   </tr>
   <tr>
@@ -64,14 +79,14 @@
     <a href="https://github.com/Ddemkowicz">
       <img src="src/images/team/DawidD.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer <br>
-      "Watched" and "Queue" buttons create lists of movies added to a given group.
+      Developing the "Watched" and "Queue" buttons to create lists of movies added to a given group.
     </td>
     <td align="center">
     <b>Filip Zieliński</b> <br>
     <a href="https://github.com/Thebrefff">
       <img src="src/images/team/FilipZ.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      Search.
+      Implementing the search functionality for the website.
     </td>
   </tr>
   <tr>
@@ -80,7 +95,7 @@
     <a href="https://github.com/FilipGk">
       <img src="src/images/team/FilipG.jpg" alt="avatar" width="25%" style="border-radius: 50%"></a><br>
       Developer<br>
-      Pagination.
+     Implementing pagination to enable the display of large amounts of data on multiple pages.
     </td>
     <td></td>
   </tr>
