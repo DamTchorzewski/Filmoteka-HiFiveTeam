@@ -2,7 +2,7 @@
   "name": "filmoteka-hifiveteam",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://damiantchorzewski.github.io/Filmoteka-HiFiveTeam/src/index.html",
+  "homepage": "https://DamTchorzewski.github.io/Filmoteka-HiFiveTeam/src/index.html",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Filmoteka-HiFiveTeam/"
