@@ -91,6 +91,10 @@ The project has been organized into a modular structure, which makes it easier t
 ## Summary
 Filmoteka is a comprehensive solution for film lovers to easily browse, search and collect information about films. Thanks to the modular code structure and the use of modern technologies, FilmHub provides users with a satisfying film experience.
 
+## Screenshots
+<img width="100%" src="https://github.com/damtchorzewski/filmoteka-hifiveteam/blob/main/assets/ss2.png">
+<img width="100%" src="https://github.com/damtchorzewski/filmoteka-hifiveteam/blob/main/assets/ss3.png">
+
 
 ## HiFiveTeam Co-Creators
 
