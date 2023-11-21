@@ -7,9 +7,6 @@
   </tr>
 </table>
 
-## Introduction
-Filmoteka is an interactive film platform that allows users to browse, search, and gather information about films. It was created to provide an enjoyable movie experience for users by presenting information about movies, the ability to watch trailers, and the option to add movies to watch and watch in the future.
-
 ## Design Structure
 
 The project has been organized into a modular structure, which makes it easier to manage code and develop functionality. Below is a description of the main modules of the project:
