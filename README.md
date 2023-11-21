@@ -1,3 +1,104 @@
+# Filmoteka
+
+Filmoteka is an interactive film platform that allows users to browse, search, and gather information about films. It was created to provide an enjoyable movie experience for users by presenting information about movies, the ability to watch trailers, and the option to add movies to watch and watch in the future.
+
+## Design Structure
+
+The project has been organized into a modular structure, which makes it easier to manage code and develop functionality. Below is a description of the main modules of the project:
+
+- api. js: Module responsible for communication with external movie API (The Movie Database). Includes features to download videos, movie details, trailers, etc.
+
+- btn-modal. js: Module that supports interaction with buttons to add videos to watchlist and to watch. Uses local data storage.
+
+- genres. js: A module that defines available movie genres, used to map genre identifiers to their names.
+
+- loader. js: Module responsible for showing and hiding animated loader.
+
+- local-storage. js: A module that manages local data storage, such as watchlist and watchlist.
+
+- modal-movie. js: Module that supports showing and hiding modal window with movie details.
+
+- modal-open-close. js: Module responsible for opening and closing a modal window and handling closing events (Escape key, clicking outside the window).
+
+- my-library. js: A module that supports the functionality of the user library, i. e. watch and watch lists.
+
+- pagination. js: A module that implements pagination for search results and trending lists.
+
+- refresh. js: A module that updates the state of the buttons for adding videos in the modal window after changing the state of the local storage.
+
+- refs. js: A module containing references to DOM elements, making it easier to access them in other modules.
+
+- render-movie-card. js: A module that renders movie cards on the home page and in the user library.
+
+- render-movie-details. js: A module that renders movie details in a modal window.
+
+- scroll-top. js: The module responsible for scrolling the page to the top.
+
+- search. js: Video search engine that uses pagination to display results.
+
+- trailer. js: Module for displaying movie trailers in a modal window.
+
+- trending-movies-pagination. js: Pagination module for trending movies section.
+
+## Main Features of the Project:
+
+### Watching Videos:
+- The homepage presents film trends using pagination.
+- Each video is represented by a card containing basic information.
+
+### Search Videos:
+- Ability to search for videos based on the title.
+- Pagination of search results for better navigation.
+
+### Video Details:
+- Clicking on the video opens a modal window with full information about the video.
+
+### Adding to List:
+- Users can add videos to their watch list and to watch.
+- Update the status of the add buttons in the modal window.
+
+### User Library:
+- A separate section containing a list of watched and to watch videos.
+- Ability to switch between lists.
+
+### Movie Trailers:
+- Option to watch the movie trailer in the modal window.
+
+## Technologies Used
+
+JavaScript (ES6+)
+HTML5
+CSS3
+Fetch API
+Local Storage
+Notiflix (for notifications)
+BasicLightbox (for displaying trailers)
+
+## Success Criteria
+
+- Responsiveness: The design is responsive and adapted to different devices.
+- Code Transparency: Project code is readable, organized, and uses best programming practices.
+- Working Features: All major design features work properly, and user interactions are intuitive.
+
+## Summary
+FilmHub is a comprehensive solution for film lovers to easily browse, search and collect information about films. Thanks to the modular code structure and the use of modern technologies, FilmHub provides users with a satisfying film experience.
+
+Last Updated: November 2023
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # :film_strip: Filmoteka :popcorn:
 
 <table>
