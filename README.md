@@ -83,24 +83,6 @@ BasicLightbox (for displaying trailers)
 ## Summary
 Filmoteka is a comprehensive solution for film lovers to easily browse, search and collect information about films. Thanks to the modular code structure and the use of modern technologies, FilmHub provides users with a satisfying film experience.
 
-Last Updated: November 2023
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# :film_strip: Filmoteka :popcorn:
-
 <table>
   <tr>
     <td><p>The "Filmoteka" website created by the HiFiveTeam team is a place where you can find reviews and descriptions of films that are worth watching. It is an ideal source of inspiration for cinema lovers and people who want to expand their knowledge of the film world. Intuitive and clear navigation will allow you to quickly find the videos you are interested in and read the descriptions and ratings of other users. Go to the website and allow yourself unforgettable movie screenings!</p></td>
