@@ -1,4 +1,4 @@
-# Filmoteka
+# :film_strip: Filmoteka :popcorn:
 
 Filmoteka is an interactive film platform that allows users to browse, search, and gather information about films. It was created to provide an enjoyable movie experience for users by presenting information about movies, the ability to watch trailers, and the option to add movies to watch and watch in the future.
 
@@ -81,7 +81,7 @@ BasicLightbox (for displaying trailers)
 - Working Features: All major design features work properly, and user interactions are intuitive.
 
 ## Summary
-FilmHub is a comprehensive solution for film lovers to easily browse, search and collect information about films. Thanks to the modular code structure and the use of modern technologies, FilmHub provides users with a satisfying film experience.
+Filmoteka is a comprehensive solution for film lovers to easily browse, search and collect information about films. Thanks to the modular code structure and the use of modern technologies, FilmHub provides users with a satisfying film experience.
 
 Last Updated: November 2023
 
