@@ -7,7 +7,7 @@
   </tr>
 </table>
 
-
+## Introduction
 Filmoteka is an interactive film platform that allows users to browse, search, and gather information about films. It was created to provide an enjoyable movie experience for users by presenting information about movies, the ability to watch trailers, and the option to add movies to watch and watch in the future.
 
 ## Design Structure
@@ -48,7 +48,7 @@ The project has been organized into a modular structure, which makes it easier t
 
 - trending-movies-pagination. js: Pagination module for trending movies section.
 
-## Main Features of the Project:
+## Main Features of the Project
 
 ### Watching Videos:
 - The homepage presents film trends using pagination.
@@ -72,15 +72,15 @@ The project has been organized into a modular structure, which makes it easier t
 ### Movie Trailers:
 - Option to watch the movie trailer in the modal window.
 
-## Technologies Used
+### Technologies Used:
 
-JavaScript (ES6+)
-HTML5
-CSS3
-Fetch API
-Local Storage
-Notiflix (for notifications)
-BasicLightbox (for displaying trailers)
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Fetch API
+- Local Storage
+- Notiflix (for notifications)
+- BasicLightbox (for displaying trailers)
 
 ## Success Criteria
 
