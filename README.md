@@ -7,7 +7,7 @@
   </tr>
 </table>
 
-## Design Structure
+## Structure
 
 The project has been organized into a modular structure, which makes it easier to manage code and develop functionality. Below is a description of the main modules of the project:
 
