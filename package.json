@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
