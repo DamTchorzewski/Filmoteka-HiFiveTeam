@@ -25,18 +25,18 @@ https://damtchorzewski.github.io/tmdb-movie-browser/
 **Tagi (Topics):**
 
 ```text
-movies tmdb-api movie-database javascript sass parcel pagination local-storage responsive-design github-pages github-actions team-project
+movies tmdb-api movie-database javascript sass parcel pagination local-storage responsive-design github-pages github-actions
 ```
 
 Z GitHub CLI (`gh`) to samo jedną komendą:
 
 ```bash
-gh repo edit DamTchorzewski/tmdb-movie-browser --homepage "https://damtchorzewski.github.io/tmdb-movie-browser/" --description "Movie browser on the TMDb API: search, trailers and watchlists in vanilla JavaScript with Parcel." --add-topic movies --add-topic tmdb-api --add-topic movie-database --add-topic javascript --add-topic sass --add-topic parcel --add-topic pagination --add-topic local-storage --add-topic responsive-design --add-topic github-pages --add-topic github-actions --add-topic team-project
+gh repo edit DamTchorzewski/tmdb-movie-browser --homepage "https://damtchorzewski.github.io/tmdb-movie-browser/" --description "Movie browser on the TMDb API: search, trailers and watchlists in vanilla JavaScript with Parcel." --add-topic movies --add-topic tmdb-api --add-topic movie-database --add-topic javascript --add-topic sass --add-topic parcel --add-topic pagination --add-topic local-storage --add-topic responsive-design --add-topic github-pages --add-topic github-actions --add-topic
 ```
 
 ## Ustawienia do włączenia
 
-| Gdzie (GitHub)                      | Co ustawić                                           |
+| Gdzie (GitHub) | Co ustawić |
 | ----------------------------------- | ---------------------------------------------------- |
-| Settings → Pages                    | Source: gałąź `gh-pages` (publikuje ją `deploy.yml`) |
-| Settings → General → Default branch | `main` (już jest)                                    |
+| Settings → Pages | Source: gałąź `gh-pages` (publikuje ją `deploy.yml`) |
+| Settings → General → Default branch | `main` (już jest) |
