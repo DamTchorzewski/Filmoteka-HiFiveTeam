@@ -107,3 +107,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# working files of the README images (tools/readme-images)
+.scratch/
