@@ -1,21 +1,21 @@
 {
-  "name": "filmoteka-hifiveteam",
+  "name": "tmdb-movie-browser",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://damtchorzewski.github.io/Filmoteka-HiFiveTeam/src/index.html",
+  "homepage": "https://damtchorzewski.github.io/tmdb-movie-browser/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Filmoteka-HiFiveTeam/"
+    "build": "parcel build src/*.html --public-url /tmdb-movie-browser/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/DamTchorzewski/tmdb-movie-browser.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/DamTchorzewski/tmdb-movie-browser/issues"
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
