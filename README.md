@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/banner-dark.png">
-    <img src="docs/images/banner-light.png" alt="Filmoteka: a film browser, a team project" width="100%">
+    <img src="docs/images/banner-light.png" alt="Filmoteka: a film browser on the TMDb API" width="100%">
   </picture>
 </p>
 
@@ -11,12 +11,11 @@
 
 ## About
 
-<a href="https://damtchorzewski.github.io/Filmoteka-HiFiveTeam/"><img src="docs/images/open-site.png" alt="Open the live site" width="130"></a>
+<a href="https://damtchorzewski.github.io/tmdb-movie-browser/"><img src="docs/images/open-site.png" alt="Open the live site" width="130"></a>
 
-The "Filmoteka" website created by the HiFiveTeam team is a place where you can find reviews and descriptions of films
-that are worth watching. It is an ideal source of inspiration for cinema lovers and people who want to expand their
-knowledge of the film world. Intuitive and clear navigation will allow you to quickly find the videos you are
-interested in and read the descriptions or watch the trailer.
+**Filmoteka** is a film browser on The Movie Database (TMDb) API: the trending films of the day, a title search, a
+details window with the trailer, and personal "watched" and "queue" lists kept in the browser. A static site in
+vanilla JavaScript modules, SASS and Parcel, published to GitHub Pages.
 
 - **Trending films.** The home page shows the trends of the day with pagination; each film is a card with the basic
   information.
@@ -30,11 +29,8 @@ interested in and read the descriptions or watch the trailer.
 - **The team window.** The footer opens the window with the people who made the site (`modal-team.js`).
 - **Deployed by Actions.** A push to `main` builds the site and publishes it to the `gh-pages` branch.
 
-The goals of the project: a responsive design adapted to different devices, readable and organised code, and working
-features with intuitive interaction.
-
-> **Status:** a finished course project. The film data comes from The Movie Database (TMDb), so the posters and the
-> trending list change over time.
+> **Status:** the film data comes from The Movie Database (TMDb), so the posters and the trending list change over
+> time.
 
 ## Tech stack
 
@@ -63,8 +59,8 @@ The content is in English; code and commits are in English.
 ## Quick start
 
 ```bash
-git clone https://github.com/DamTchorzewski/Filmoteka-HiFiveTeam.git
-cd Filmoteka-HiFiveTeam
+git clone https://github.com/DamTchorzewski/tmdb-movie-browser.git
+cd tmdb-movie-browser
 npm install
 npm start      # http://localhost:1234
 ```
@@ -76,13 +72,13 @@ Requirements: Node.js LTS and npm. Parcel reloads the page when a file changes.
 | Command         | What it does                                                                           |
 | --------------- | -------------------------------------------------------------------------------------- |
 | `npm start`     | development server with live reload (`parcel src/*.html`)                              |
-| `npm run build` | production build to `dist/` with the public URL `/Filmoteka-HiFiveTeam/` (what the workflow runs) |
+| `npm run build` | production build to `dist/` with the public URL `/tmdb-movie-browser/` (what the workflow runs) |
 
 ## Configuration
 
 No environment variables. The base address and the (v3) API key of The Movie Database are constants at the top of
 `src/js/api.js`; this is a static site, so the key is visible in the browser whichever way it is supplied. The public
-URL of the build is the `--public-url /Filmoteka-HiFiveTeam/` argument of the `build` script; change it when the
+URL of the build is the `--public-url /tmdb-movie-browser/` argument of the `build` script; change it when the
 repository is renamed.
 
 ## Structure
@@ -127,18 +123,17 @@ Commits in English. `deploy.yml` builds every push to `main` and publishes the r
 
 **Departures from the standards (and why):**
 
-- **A team project from a course:** nine people worked on feature branches straight into `main`; there is no
-  `develop`.
+- **Feature branches straight into `main`:** nine contributors worked this way; there is no `develop`.
 - **No tests, no CI beyond the deploy workflow, no `.env.example`:** the site has no configuration (see above).
 - **The TMDb key is in the source:** a static site cannot keep it secret; it is a public client key.
 - **npm, not pnpm, and no `.nvmrc`:** the project predates the standards.
-- **`package.json`:** `repository`, `author` and `license` still describe the GoIT Parcel template; the project is
-  under the MIT license (`LICENSE`).
+- **`package.json`:** `author` still names the author of the Parcel starter template; the project is under the MIT license
+  (`LICENSE`).
 - **Documentation:** the template's `README.en.md` and `README.pl.md` (generic Parcel instructions) were removed; the
   Parcel documentation covers what they said.
-- **README images** are made by `tools/readme-images` (profile `Filmoteka-HiFiveTeam`) from the live site; the logo
+- **README images** are made by `tools/readme-images` (profile `tmdb-movie-browser`) from the live site; the logo
   is a wordmark.
-- **No DamReboot footer:** a team project, not a company one.
+- **No DamReboot footer:** the repository belongs to a team of authors.
 
 ## Documentation
 
@@ -148,7 +143,7 @@ Commits in English. `deploy.yml` builds every push to `main` and publishes the r
 
 ## Team
 
-HiFiveTeam, a team of the course; the roles are the ones the team wrote down.
+HiFiveTeam; the roles are the ones the team wrote down.
 
 | Member                                                           | Role and work                                                                                                                                                                                                                  |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
